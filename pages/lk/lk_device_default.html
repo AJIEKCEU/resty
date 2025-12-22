@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/lk_device_default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Личный кабинет</title>
+</head>
+<body>
+<header id="header"></header>
+<main>
+    <div class="lk_default wrapper">
+        <div id="breadcrumbs"></div>
+        <div class="your_device">
+            <h2>Ваши устройства</h2>
+            <div class="container_info">
+                <div class="yet_have">
+                    <h4>У вас уже есть iPhone?</h4>
+                    <div class="add_to_purpose text_s">Добавьте ваше устройство, чтобы узнать его стоимость выкупа,
+                        видеть специальные предложения по замене на новое, скидки на сервис и аксессуары
+                    </div>
+                </div>
+                <a href="#" class="btn_add_device">
+                    <h5>Добавить устройство</h5>
+                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 7.28455V15.2845M7 11.2845H15M21 11.2845C21 16.8074 16.5228 21.2845 11 21.2845C5.47715 21.2845 1 16.8074 1 11.2845C1 5.7617 5.47715 1.28455 11 1.28455C16.5228 1.28455 21 5.7617 21 11.2845Z"
+                              stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="popular_goods wrapper">
+            <h2>Обменяйте ваше устройство на новое:</h2>
+            <div class="popular_goods_carousel">
+                <div class="popular_goods_item">
+                    <img class="popular_goods_item_img" src="../../images/iphone_blue_popular_goods.png" alt="iphoneblue">
+                    <div class="popular_goods_item_text">
+                        <h4>iPhone 12</h4>
+                        <div class="option_choice">
+                            <div class="option_choice_memory">
+                                <div class="memory_choice">
+                                    <a href="#" class="size">
+                                        <h6>128 GB</h6>
+                                    </a>
+                                    <a href="#" class="size">
+                                        <h6>256 GB</h6>
+                                    </a>
+                                    <a href="#" class="size">
+                                        <h6>512 GB</h6>
+                                    </a>
+                                    <a href="#" class="size">
+                                        <h6>1024 GB</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="color_choice">
+                                <a href="" class="color_option black"></a>
+                                <a href="" class="color_option blue"></a>
+                                <a href="" class="color_option green"></a>
+                                <a href="" class="color_option orange"></a>
+                                <a href="" class="color_option white"></a>
+                                <a href="" class="color_option pink"></a>
+                            </div>
+                        </div>
+                        <div class="buy">
+                            <div class="buy_with_resty">
+                                <div class="from">
+                                    <h6 class="h6_medium">Купить с Resty</h6>
+                                    <h4>от 90 BYN</h4>
+                                </div>
+                                <div class="period">
+                                    <h6 class="h6_medium">11 месяцев</h6>
+                                </div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="buy_now">
+                                <h6 class="h6_medium">Купить сразу&nbsp;</h6><h5>от 1200 BYN</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn_popular_goods_item text_white" type="submit"><h5>Смотреть</h5></button>
+                </div>
+                <div class="popular_goods_item">
+                    <img class="popular_goods_item_img" src="../../images/iphone_blue_popular_goods.png" alt="iphoneblue">
+                    <div class="popular_goods_item_text">
+                        <h4>iPhone 12</h4>
+                        <div class="option_choice">
+                            <div class="option_choice_memory">
+                                <div class="memory_choice">
+                                    <a href="#" class="size">
+                                        <h6>128 GB</h6>
+                                    </a>
+                                    <a href="#" class="size">
+                                        <h6>256 GB</h6>
+                                    </a>
+                                    <a href="#" class="size">
+                                        <h6>512 GB</h6>
+                                    </a>
+                                    <a href="#" class="size">
+                                        <h6>1024 GB</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="color_choice">
+                                <a href="" class="color_option black"></a>
+                                <a href="" class="color_option blue"></a>
+                                <a href="" class="color_option green"></a>
+                                <a href="" class="color_option orange"></a>
+                                <a href="" class="color_option white"></a>
+                                <a href="" class="color_option pink"></a>
+                            </div>
+                        </div>
+                        <div class="buy">
+                            <div class="buy_with_resty">
+                                <div class="from">
+                                    <h6 class="h6_medium">Купить с Resty</h6>
+                                    <h4>от 90 BYN</h4>
+                                </div>
+                                <div class="period">
+                                    <h6 class="h6_medium">11 месяцев</h6>
+                                </div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="buy_now">
+                                <h6 class="h6_medium">Купить сразу&nbsp;</h6><h5>от 1200 BYN</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn_popular_goods_item text_white" type="submit"><h5>Смотреть</h5></button>
+                </div>
+                <div class="popular_goods_item">
+                    <img class="popular_goods_item_img" src="../../images/iphone_blue_popular_goods.png" alt="iphoneblue">
+                    <div class="popular_goods_item_text">
+                        <h4>iPhone 12</h4>
+                        <div class="option_choice">
+                            <div class="option_choice_memory">
+                                <div class="memory_choice">
+                                    <a href="#" class="size">
+                                        <h6>128 GB</h6>
+                                    </a>
+                                    <a href="#" class="size">
+                                        <h6>256 GB</h6>
+                                    </a>
+                                    <a href="#" class="size">
+                                        <h6>512 GB</h6>
+                                    </a>
+                                    <a href="#" class="size">
+                                        <h6>1024 GB</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="color_choice">
+                                <a href="" class="color_option black"></a>
+                                <a href="" class="color_option blue"></a>
+                                <a href="" class="color_option green"></a>
+                                <a href="" class="color_option orange"></a>
+                                <a href="" class="color_option white"></a>
+                                <a href="" class="color_option pink"></a>
+                            </div>
+                        </div>
+                        <div class="buy">
+                            <div class="buy_with_resty">
+                                <div class="from">
+                                    <h6 class="h6_medium">Купить с Resty</h6>
+                                    <h4>от 90 BYN</h4>
+                                </div>
+                                <div class="period">
+                                    <h6 class="h6_medium">11 месяцев</h6>
+                                </div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="buy_now">
+                                <h6 class="h6_medium">Купить сразу&nbsp;</h6><h5>от 1200 BYN</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn_popular_goods_item text_white" type="submit"><h5>Смотреть</h5></button>
+                </div>
+                <div class="popular_goods_item">
+                    <img class="popular_goods_item_img" src="../../images/iphone_blue_popular_goods.png" alt="iphoneblue">
+                    <div class="popular_goods_item_text">
+                        <h4>iPhone 12</h4>
+                        <div class="option_choice">
+                            <div class="option_choice_memory">
+                                <div class="memory_choice">
+                                    <a href="#" class="size">
+                                        <h6>128 GB</h6>
+                                    </a>
+                                    <a href="#" class="size">
+                                        <h6>256 GB</h6>
+                                    </a>
+                                    <a href="#" class="size">
+                                        <h6>512 GB</h6>
+                                    </a>
+                                    <a href="#" class="size">
+                                        <h6>1024 GB</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="color_choice">
+                                <a href="" class="color_option black"></a>
+                                <a href="" class="color_option blue"></a>
+                                <a href="" class="color_option green"></a>
+                                <a href="" class="color_option orange"></a>
+                                <a href="" class="color_option white"></a>
+                                <a href="" class="color_option pink"></a>
+                            </div>
+                        </div>
+                        <div class="buy">
+                            <div class="buy_with_resty">
+                                <div class="from">
+                                    <h6 class="h6_medium">Купить с Resty</h6>
+                                    <h4>от 90 BYN</h4>
+                                </div>
+                                <div class="period">
+                                    <h6 class="h6_medium">11 месяцев</h6>
+                                </div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="buy_now">
+                                <h6 class="h6_medium">Купить сразу&nbsp;</h6><h5>от 1200 BYN</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn_popular_goods_item text_white" type="submit"><h5>Смотреть</h5></button>
+                </div>
+            </div>
+            <div class="btn_accessories_carousel_items">
+
+                <button class="btn_pop_goods" type="submit"><h5>Перейти в каталог</h5></button>
+
+            </div>
+
+        </div>
+        <div class="repair_price wrapper">
+            <h2>Специальные предложения для вас</h2>
+            <div class="carousel_items_repair_price">
+                <div class="carousel_items_repair_price_block1">
+                    <form class="form" name="txt">
+                        <div class="carousel_item_repair_price">
+                            <input type="radio" name="txt" id="txt1">
+                            <label class="label_r" for="txt1">
+                                <div class="mobile_service">
+                                    <div class="white_back">
+                                        <h6>Гарантия: 1 год</h6>
+                                    </div>
+                                    <div class="white_back">
+                                        <h6>Ремонт от 30 мин</h6>
+                                    </div>
+                                </div>
+                                <div class="glass_price">
+                                    <h4>Замена стекла дисплейного модуля</h4>
+                                    <div class="price_repair_price">
+                                        <h4 class="crossed_price">190 руб.</h4>
+                                        <h4>190 руб.</h4>
+                                    </div>
+                                </div>
+                                <button class="btn_select_list" type="submit"><h5>Заказать ремонт</h5></button>
+                                <button class="btn_select_list_checked" type="submit"><h5>Перейти в корзину</h5>
+                                </button>
+                            </label>
+                        </div>
+                        <div class="carousel_item_repair_price">
+                            <input type="radio" name="txt" id="txt2" checked>
+                            <label class="label_r" for="txt2">
+                                <div class="mobile_service">
+                                    <div class="white_back">
+                                        <h6>Гарантия: 1 год</h6>
+                                    </div>
+                                    <div class="white_back">
+                                        <h6>Ремонт от 30 мин</h6>
+                                    </div>
+                                </div>
+                                <div class="glass_price">
+                                    <h4>Замена стекла дисплейного модуля</h4>
+                                    <div class="price_repair_price">
+                                        <h4 class="crossed_price">190 руб.</h4>
+                                        <h4>190 руб.</h4>
+                                    </div>
+                                </div>
+                                <button class="btn_select_list" type="submit"><h5>Заказать ремонт</h5></button>
+                                <button class="btn_select_list_checked" type="submit"><h5>Перейти в корзину</h5>
+                                </button>
+                            </label>
+                        </div>
+                        <div class="carousel_item_repair_price">
+                            <input type="radio" name="txt" id="txt3">
+                            <label class="label_r" for="txt3">
+                                <div class="mobile_service">
+                                    <div class="white_back">
+                                        <h6>Гарантия: 1 год</h6>
+                                    </div>
+                                    <div class="white_back">
+                                        <h6>Ремонт от 30 мин</h6>
+                                    </div>
+                                </div>
+                                <div class="glass_price">
+                                    <h4>Замена стекла дисплейного модуля</h4>
+                                    <div class="price_repair_price">
+                                        <h4 class="crossed_price">190 руб.</h4>
+                                        <h4>190 руб.</h4>
+                                    </div>
+                                </div>
+                                <button class="btn_select_list" type="submit"><h5>Заказать ремонт</h5></button>
+                                <button class="btn_select_list_checked" type="submit"><h5>Перейти в корзину</h5>
+                                </button>
+                            </label>
+                        </div>
+                        <div class="carousel_item_repair_price">
+                            <input type="radio" name="txt" id="txt4">
+                            <label class="label_r" for="txt4">
+                                <div class="mobile_service">
+                                    <div class="white_back">
+                                        <h6>Гарантия: 1 год</h6>
+                                    </div>
+                                    <div class="white_back">
+                                        <h6>Ремонт от 30 мин</h6>
+                                    </div>
+                                </div>
+                                <div class="glass_price">
+                                    <h4>Замена стекла дисплейного модуля</h4>
+                                    <div class="price_repair_price">
+                                        <h4 class="crossed_price">190 руб.</h4>
+                                        <h4>190 руб.</h4>
+                                    </div>
+                                </div>
+                                <button class="btn_select_list" type="submit"><h5>Заказать ремонт</h5></button>
+                                <button class="btn_select_list_checked" type="submit"><h5>Перейти в корзину</h5>
+                                </button>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="carousel_items_repair_price_block2">
+                    <form class="form" name="txt">
+                        <div class="carousel_item_repair_price">
+                            <input type="radio" name="txt" id="txt5">
+                            <label class="label_r" for="txt5">
+                                <div class="mobile_service">
+                                    <div class="white_back">
+                                        <h6>Гарантия: 1 год</h6>
+                                    </div>
+                                    <div class="white_back">
+                                        <h6>Ремонт от 30 мин</h6>
+                                    </div>
+                                </div>
+                                <div class="glass_price">
+                                    <h4>Замена стекла дисплейного модуля</h4>
+                                    <div class="price_repair_price">
+                                        <h4 class="crossed_price">190 руб.</h4>
+                                        <h4>190 руб.</h4>
+                                    </div>
+                                </div>
+                                <button class="btn_select_list" type="submit"><h5>Заказать ремонт</h5></button>
+                                <button class="btn_select_list_checked" type="submit"><h5>Перейти в корзину</h5>
+                                </button>
+                            </label>
+                        </div>
+                        <div class="carousel_item_repair_price">
+                            <input type="radio" name="txt" id="txt6" checked>
+                            <label class="label_r" for="txt6">
+                                <div class="mobile_service">
+                                    <div class="white_back">
+                                        <h6>Гарантия: 1 год</h6>
+                                    </div>
+                                    <div class="white_back">
+                                        <h6>Ремонт от 30 мин</h6>
+                                    </div>
+                                </div>
+                                <div class="glass_price">
+                                    <h4>Замена стекла дисплейного модуля</h4>
+                                    <div class="price_repair_price">
+                                        <h4 class="crossed_price">190 руб.</h4>
+                                        <h4>190 руб.</h4>
+                                    </div>
+                                </div>
+                                <button class="btn_select_list" type="submit"><h5>Заказать ремонт</h5></button>
+                                <button class="btn_select_list_checked" type="submit"><h5>Перейти в корзину</h5>
+                                </button>
+                            </label>
+                        </div>
+                        <div class="carousel_item_repair_price">
+                            <input type="radio" name="txt" id="txt7">
+                            <label class="label_r" for="txt7">
+                                <div class="mobile_service">
+                                    <div class="white_back">
+                                        <h6>Гарантия: 1 год</h6>
+                                    </div>
+                                    <div class="white_back">
+                                        <h6>Ремонт от 30 мин</h6>
+                                    </div>
+                                </div>
+                                <div class="glass_price">
+                                    <h4>Замена стекла дисплейного модуля</h4>
+                                    <div class="price_repair_price">
+                                        <h4 class="crossed_price">190 руб.</h4>
+                                        <h4>190 руб.</h4>
+                                    </div>
+                                </div>
+                                <button class="btn_select_list" type="submit"><h5>Заказать ремонт</h5></button>
+                                <button class="btn_select_list_checked" type="submit"><h5>Перейти в корзину</h5>
+                                </button>
+                            </label>
+                        </div>
+                        <div class="carousel_item_repair_price">
+                            <input type="radio" name="txt" id="txt8">
+                            <label class="label_r" for="txt8">
+                                <div class="mobile_service">
+                                    <div class="white_back">
+                                        <h6>Гарантия: 1 год</h6>
+                                    </div>
+                                    <div class="white_back">
+                                        <h6>Ремонт от 30 мин</h6>
+                                    </div>
+                                </div>
+                                <div class="glass_price">
+                                    <h4>Замена стекла дисплейного модуля</h4>
+                                    <div class="price_repair_price">
+                                        <h4 class="crossed_price">190 руб.</h4>
+                                        <h4>190 руб.</h4>
+                                    </div>
+                                </div>
+                                <button class="btn_select_list" type="submit"><h5>Заказать ремонт</h5></button>
+                                <button class="btn_select_list_checked" type="submit"><h5>Перейти в корзину</h5>
+                                </button>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="accessories wrapper">
+            <h2>Аксессуары</h2>
+            <div class="accessories_carousel">
+                <div class="accessories_carousel_item">
+                    <img class="accessories_img" src="../../images/earbuds-white%201.png" alt="">
+                    <div>
+                        <h4>iPhone 12 64 гб</h4>
+                        <h5>от 1200 руб.</h5>
+                    </div>
+                    <button class="btn_accessories_carousel text_white" type="submit"><h5>В корзину</h5></button>
+                </div>
+                <div class="accessories_carousel_item">
+                    <img class="accessories_img" src="../../images/yellow_phone1.png" alt="">
+                    <div>
+                        <h4>iPhone 12 64 гб</h4>
+                        <h5>от 1200 руб.</h5>
+                    </div>
+                    <button class="btn_accessories_carousel text_white" type="submit"><h5>В корзину</h5></button>
+                </div>
+                <div class="accessories_carousel_item">
+                    <img class="accessories_img" src="../../images/charge.png" alt="">
+                    <div>
+                        <h4>iPhone 12 64 гб</h4>
+                        <h5>от 1200 руб.</h5>
+                    </div>
+                    <button class="btn_accessories_carousel text_white" type="submit"><h5>В корзину</h5></button>
+                </div>
+                <div class="accessories_carousel_item">
+                    <img class="accessories_img" src="../../images/charge.png" alt="">
+                    <div>
+                        <h4>iPhone 12 64 гб</h4>
+                        <h5>от 1200 руб.</h5>
+                    </div>
+                    <button class="btn_accessories_carousel text_white" type="submit"><h5>В корзину</h5></button>
+                </div>
+                <div class="accessories_carousel_item">
+                    <img class="accessories_img" src="../../images/earbuds-white%201.png" alt="">
+                    <div>
+                        <h4>iPhone 12 64 гб</h4>
+                        <h5>от 1200 руб.</h5>
+                    </div>
+                    <button class="btn_accessories_carousel text_white" type="submit"><h5>В корзину</h5></button>
+                </div>
+                <div class="accessories_carousel_item">
+                    <img class="accessories_img" src="../../images/earbuds-white%201.png" alt="">
+                    <div>
+                        <h4>iPhone 12 64 гб</h4>
+                        <h5>от 1200 руб.</h5>
+                    </div>
+                    <button class="btn_accessories_carousel text_white" type="submit"><h5>В корзину</h5></button>
+                </div>
+            </div>
+            <div class="btn_accessories_carousel_items">
+                <button class="btn_accessories text_white" type="submit"><h5>Смотреть все аксессуары</h5></button>
+            </div>
+        </div>
+    </div>
+</main>
+<footer id="footer"></footer>
+<script src="../../script.js"></script>
+</body>
+</html>

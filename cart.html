@@ -1,0 +1,1167 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <!-- <link rel="stylesheet" href="styles/service.css"> -->
+    <link rel="stylesheet" href="css/upd/style_main.css">
+    <!-- <link rel="stylesheet" href="css/upd/style_common.css">
+    <link rel="stylesheet" href="css/upd/style_header2.css">
+    <link rel="stylesheet" href="css/upd/style_cart.css">
+    <link rel="stylesheet" href="css/upd/style_popup.css">
+    <link rel="stylesheet" href="css/upd/style_accessory_inline.css">
+    <link rel="stylesheet" href="css/upd/style_sell_steps.css"> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Корзина</title>
+</head>
+<body>
+
+    <header>
+        <div class="wrap_h_all">
+            <div class="wrap_h_all_in">
+    
+                <div class="wrap_h_head">
+                    <div class="h_head">
+                        <div class="h_head_info">
+                            <div class="adr h6">Минск, Тимирязева, 114</div>
+                            <div class="schedule h6">График работы Пн-пт: 10:00-19:00 Сб: 10:00-19:00 Вс: Выходной</div>
+                        </div>
+                        <div class="h_head_nets">
+                            <div class="in">
+                                <a href="" target="_blank"><img src="icons/instagram_social_icon.svg" alt=""></a>
+                                <a href="" target="_blank"><img src="icons/tikTok_social_icon.svg" alt=""></a>
+                                <a href="" target="_blank"><img src="icons/telegram_social_icon.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="h_head_phone">
+                            <a href="tel:+375445124633">+375 44 512 46 33</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="wrap_h_body">
+                    <div class="h_body">
+                        <div class="h_logo">
+                            <a href="/">
+                                <img src="icons/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="wrap_menu">
+                            <nav>
+                                <ul class="menu_ul">
+                                    <li class="menu-item-has-children">
+                                        <a href="" class="h5">Купить</a>
+                                        <ul class="sub-menu">
+                                            <div class="wrap_in">
+                                                <li>
+                                                    <a href="">
+                                                        <span class="h5">iPhone</span>
+                                                        <div><img src="images/burger_menu_buy_iphone.png" alt=""></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span class="h5">Macbook</span>
+                                                        <div><img src="images/burger_menu_buy_macbook.png" alt=""></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span class="h5">iPad</span>
+                                                        <div><img src="images/burger_menu_buy_ipad.png" alt=""></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span class="h5"> Apple Watch</span>
+                                                        <div><img src="images/burger_menu_buy_Apple_watch.png" alt=""></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span class="h5">AirPods</span>
+                                                        <div><img src="images/burger_menu_buy_airpods.png" alt=""></div>
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li><a href="" class="h5">Продать</a></li>
+                                    <li class="menu-item-has-children">
+                                        <a href="" class="h5">Аксессуары</a>
+                                        <ul class="sub-menu">
+                                            <div class="wrap_in">
+                                                <li>
+                                                    <a href="">
+                                                        <span>Защитное стекло</span>
+                                                        <div><img src="images/burger_accessories_glass.png" alt=""></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>Сетевое З/У для телефона</span>
+                                                        <div><img src="images/burger_accessories_charge.png" alt=""></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>Аудио</span>
+                                                        <div><img src="images/burger_accessories_audio.png" alt=""></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>Кабель З/У</span>
+                                                        <div><img src="images/burger_accessories_cable.png" alt=""></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>Чехлы</span>
+                                                        <div><img src="images/burger_accessories_chexol.png" alt=""></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>Держатели</span>
+                                                        <div><img src="images/burger_accessories_holder.png" alt=""></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>Карты памяти</span>
+                                                        <div><img src="images/burger_accessories_sdcard.png" alt=""></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>PowerBank</span>
+                                                        <div><img src="images/burger_accessories_powerbank.png" alt=""></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>Защитная пленка</span>
+                                                        <div><img src="images/burger_accessories_protect_film.png" alt=""></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>Переходники</span>
+                                                        <div><img src="images/burger_accessories_adapter.png" alt=""></div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>Автомобильное З/У</span>
+                                                        <div><img src="images/burger_accessories_auto.png" alt=""></div>
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li><a href="" class="h5">Сервис</a></li>
+                                    <li><a href="" class="h5">Новости</a></li>
+                                    <li><a href="" class="h5">О Resty</a></li>
+                                    <li><a href="" class="h5">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="h_backcall">
+                            <a href="" class="color_btn modal_button" data-id="popup_callback">Заказать звонок</a>
+                        </div>
+                        <div class="h_system">
+                            <a href="tel:+375445124633" class="phone"><img src="icons/phone.svg" alt=""></a>
+                            <a href="" class="user"><img src="icons/user.svg" alt=""></a>
+                            <a href="" class="cart"><span class="cart_items color_btn">1</span><img src="icons/shopping-cart.svg" alt=""></a>
+                            <a href="" class="burger"><img class="close" src="icons/menu.svg" alt=""><img class="open" src="icons/x.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </header>
+
+<main>
+    <div class="wrap upd_cart_page">
+
+        <div class="head_page">
+            <div id="breadcrumbs"></div>
+            <h1>Корзина</h1>
+        </div>
+
+        <div class="cart_main">
+            <div class="left">
+                <div class="cart_items_list">
+
+                    <div class="cart_item">
+                        <div class="img">
+                            <a href=""><img src="images/safe_device_yellow_phone.png" alt=""></a>
+                        </div>
+                        <div class="desc">
+                            <div class="capt">
+                                <h4>Чехол для iPhone 12</h4>
+                                <div class="params">
+                                    <span class="h6_semi">Цвет: Желтый</span>
+                                </div>
+                            </div>
+                            <div class="counter">
+                                <div class="in">
+                                    <span class="minus_1"><img src="icons/icon_minus.svg" alt=""></span>
+                                    <span class="current">1</span>
+                                    <span class="plus_1"><img src="icons/icon_plus.svg" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="card_switcher">
+                                <h5>Способ оплаты</h5>
+                                <div class="switcher">
+                                    <span class="buy_with_resty h5 active">Купить с Resty</span>
+                                    <span class="buy_now h5">Купить сразу</span>
+                                </div>
+                            </div>
+                            <div class="result">
+                                <div class="select_with_resty active">
+                                    <div class="period_pay">
+                                        <h5>Срок</h5>
+                                        <div class="switcher_period_pay">
+                                            <span class="12_month h5 active">12 месяцев</span>
+                                            <span class="24_month h5">24 месяца</span>
+                                        </div>
+                                    </div>
+                                    <div class="in">
+                                        <div class="part_price">
+                                            <div class="full_price">
+                                                <span class="h5">Итоговая стоимость:</span>
+                                                <span class="h5">1000 руб</span>
+                                            </div>
+                                            <span class="price-info-progress price-info-progress--theme-2">100% стоимости</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="select_now">
+                                    <div class="in">
+                                        <div class="full_price">
+                                            <span class="h5">Итоговая стоимость:</span>
+                                            <span class="h5">1000 руб</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="cart_btn_delete h6_semi">Удалить</span>
+                    </div>
+
+                    <div class="cart_item">
+                        <div class="img">
+                            <a href=""><img src="images/products_accessories_catalog_phone_blue.png" alt=""></a>
+                        </div>
+                        <div class="desc">
+                            <div class="capt">
+                                <h4>iPhone 12</h4>
+                                <div class="params">
+                                    <span class="h6_semi">64 Гб</span>
+                                    <span class="h6_semi">Состояние: Хорошее</span>
+                                    <span class="h6_semi">Батарея: Новая</span>
+                                    <span class="h6_semi">Цвет: Черный</span>
+                                </div>
+                            </div>
+                            <div class="counter">
+                                <div class="in">
+                                    <span class="minus_1"><img src="icons/icon_minus.svg" alt=""></span>
+                                    <span class="current">1</span>
+                                    <span class="plus_1"><img src="icons/icon_plus.svg" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="card_switcher">
+                                <h5>Способ оплаты</h5>
+                                <div class="switcher">
+                                    <span class="buy_with_resty h5 active">Купить с Resty</span>
+                                    <span class="buy_now h5">Купить сразу</span>
+                                </div>
+                            </div>
+                            <div class="result">
+                                <div class="select_with_resty active">
+                                    <div class="period_pay">
+                                        <h5>Срок</h5>
+                                        <div class="switcher_period_pay">
+                                            <span class="12_month h5 active">12 месяцев</span>
+                                            <span class="24_month h5">24 месяца</span>
+                                        </div>
+                                    </div>
+                                    <div class="in">
+                                        <div class="part_price">
+                                            <span class="price h4">90 руб. в месяц</span>
+                                            <span class="month h6">12 месяцев</span>
+                                        </div>
+                                        <div class="full_price">
+                                            <span class="h5">Итоговая стоимость: 1080 руб.</span>
+                                            <span class="color_bar percent_60"><span class="percent_60">60% стоимости</span></span>
+                                            <!--<span class="work modal_button" data-id="popup_about_resty"><img src="icons/info.svg" alt="">Как это работает?</span>-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="select_now">
+                                    <div class="in">
+                                        <div class="full_price">
+                                            <span class="h5">Итоговая стоимость:</span>
+                                            <span class="h5">1000 руб</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart_add_item">
+                                <a href="cart_add.html" class="cart_add_item_btn h5"><img src="icons/plus-circle.svg" alt=""><span>Добавить аксессуар</span></a>
+                            </div>
+                        </div>
+                        <span class="cart_btn_delete h6_semi">Удалить</span>
+                    </div>
+
+                    <div class="cart_item">
+                        <div class="img">
+                            <a href=""><img src="images/products_accessories_catalog_phone_blue.png" alt=""></a>
+                        </div>
+                        <div class="desc">
+                            <div class="capt">
+                                <h4>iPhone 12</h4>
+                                <div class="params">
+                                    <span class="h6_semi">64 Гб</span>
+                                    <span class="h6_semi">Состояние: Хорошее</span>
+                                    <span class="h6_semi">Батарея: Новая</span>
+                                    <span class="h6_semi">Цвет: Черный</span>
+                                </div>
+                            </div>
+                            <div class="counter">
+                                <div class="in">
+                                    <span class="minus_1"><img src="icons/icon_minus.svg" alt=""></span>
+                                    <span class="current">1</span>
+                                    <span class="plus_1"><img src="icons/icon_plus.svg" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="card_switcher">
+                                <h5>Способ оплаты</h5>
+                                <div class="switcher">
+                                    <span class="buy_with_resty h5 active">Купить с Resty</span>
+                                    <span class="buy_now h5">Купить сразу</span>
+                                </div>
+                            </div>
+                            <div class="result">
+                                <div class="select_with_resty active">
+                                    <div class="period_pay">
+                                        <h5>Срок</h5>
+                                        <div class="switcher_period_pay">
+                                            <span class="12_month h5 active">12 месяцев</span>
+                                            <span class="24_month h5">24 месяца</span>
+                                        </div>
+                                    </div>
+                                    <div class="in">
+                                        <div class="part_price">
+                                            <span class="price h4">90 руб. в месяц</span>
+                                            <span class="month h6">12 месяцев</span>
+                                        </div>
+                                        <div class="full_price">
+                                            <span class="h5">Итоговая стоимость</span>
+                                            <span class="h5">1000 руб</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="select_now">
+                                    <div class="in">
+                                        <div class="full_price">
+                                            <span class="h5">Итоговая стоимость</span>
+                                            <span class="h5">1000 руб</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart_add_item">
+                                <a href="cart_add.html" class="cart_add_item_btn h5"><img src="icons/plus-circle.svg" alt=""><span>Добавить аксессуар</span></a>
+                            </div>
+                        </div>
+                        <span class="cart_btn_delete h6_semi">Удалить</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="right">
+                <div class="wrap_in">
+                    <div class="capt">
+                        <p class="h4">Ваш заказ</p>
+                    </div>
+                    <div class="order_list">
+
+                        <div class="order_item">
+                            <div class="body">
+                                <div class="img">
+                                    <img src="images/add_accessories_earbuds.png" alt="">
+                                </div>
+                                <div class="desc">
+                                    <p class="h5">iPhone 12</p>
+                                    <div class="params">
+                                        <span class="h6_semi">64 Гб</span>
+                                        <span class="h6_semi">Состояние: Хорошее</span>
+                                        <span class="h6_semi">Батарея: Новая</span>
+                                        <span class="h6_semi">Цвет: Черный</span>
+                                    </div>
+                                </div>
+                                <div class="btn">
+                                    <span><img src="icons/chevron-down.svg" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="details active">
+                                <div class="row">
+                                    <span class="h6_semi">С 1 по 12 мес</span>
+                                    <span class="h6_semi">90 руб. в месяц</span>
+                                </div>
+                                <div class="row">
+                                    <span class="h6_semi">Итоговая стоимость</span>
+                                    <span class="h6_semi">1130 руб.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order_item">
+                            <div class="body">
+                                <div class="img">
+                                    <img src="images/add_accessories_earbuds.png" alt="">
+                                </div>
+                                <div class="desc">
+                                    <p class="h5">iPhone 12</p>
+                                    <div class="params">
+                                        <span class="h6_semi">64 Гб</span>
+                                        <span class="h6_semi">Состояние: Хорошее</span>
+                                        <span class="h6_semi">Батарея: Новая</span>
+                                        <span class="h6_semi">Цвет: Черный</span>
+                                    </div>
+                                </div>
+                                <div class="btn">
+                                    <span><img src="icons/chevron-down.svg" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="row">
+                                    <span class="h6_semi">Итоговая стоимость</span>
+                                    <span class="h6_semi">1130 руб.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="order_summary">
+                        <div class="order_summary__top">
+                            <div class="row">
+                                <span class="h5">С 1 по 12 мес</span>
+                                <span class="h5">90 руб. в месяц</span>
+                            </div>
+                            <div class="row">
+                                <span class="h5">Общая стоимость заказа</span>
+                                <span class="h5">1130 руб.</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span class="h5">Сейчас к оплате</span>
+                            <span class="h5">1130 руб.</span>
+                        </div>
+                    </div>
+
+                    <div class="min_price_alert">
+                        <div class="in">
+                            <img src="icons/icon_alert.svg" alt="">
+                            <p>Минимальная сумма покупки с Resty - 100 рублей</p>
+                        </div>
+                    </div>
+
+                    <div class="btn">
+                        <span class="color_btn cart_btn">Перейти к оформлению</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_fixed">
+                <div class="in">
+                    <div class="btn_fixed_left">
+                        <p class="btn_fixed_capt">Сейчас к оплате</p>
+                        <p class="btn_fixed_price">1130 руб.</p>
+                        <p class="btn_fixed_dop">3 товара</p>
+                    </div>
+                    <div class="btn_fixed_right">
+                        <span class="color_btn">К оформлению</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="accessory_inline short">
+            <div class="head">
+                <h2>Добавьте аксессуары</h2>
+            </div>
+            <div class="body">
+                <div class="wrap_items">
+    
+                    <div class="card_type_1">
+                        <div class="img">
+                            <a href="#">
+                                <img src="images/add_accessories_earbuds.png" alt="">
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <h4><a href="#">iPhone 12 64 гб</a></h4>
+                            <span class="h5">от 1200 руб.</span>
+                        </div>
+                        <div class="btn">
+                            <span class="color_btn">В корзину</span>
+                        </div>
+                    </div>
+    
+                    <div class="card_type_1">
+                        <div class="img">
+                            <a href="#">
+                                <img src="images/add_accessories_earbuds.png" alt="">
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <h4><a href="#">iPhone 12 64 гб</a></h4>
+                            <span class="h5">от 1200 руб.</span>
+                        </div>
+                        <div class="btn">
+                            <span class="color_btn">В корзину</span>
+                        </div>
+                    </div>
+    
+                    <div class="card_type_1">
+                        <div class="img">
+                            <a href="#">
+                                <img src="images/add_accessories_earbuds.png" alt="">
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <h4><a href="#">iPhone 12 64 гб</a></h4>
+                            <span class="h5">от 1200 руб.</span>
+                        </div>
+                        <div class="btn">
+                            <span class="color_btn">В корзину</span>
+                        </div>
+                    </div>
+    
+                    <div class="card_type_1">
+                        <div class="img">
+                            <a href="#">
+                                <img src="images/add_accessories_earbuds.png" alt="">
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <h4><a href="#">iPhone 12 64 гб</a></h4>
+                            <span class="h5">от 1200 руб.</span>
+                        </div>
+                        <div class="btn">
+                            <span class="color_btn">В корзину</span>
+                        </div>
+                    </div>
+                
+                </div>
+    
+                <div class="more_items">
+                    <a href="#" class="h5">Смотреть все аксессуары</a>
+                </div>
+    
+            </div>
+        </div>
+
+        <div class="cart_form">
+            <form>
+                <div class="wrap_user_data">
+                    <div class="user_data">
+                        <div class="form_caption">
+                            <p class="h1">Оформление заказа</p>
+                            <p class="h5 cart_back"><img src="icons/arrow-left.svg" alt="">Вернуться в корзину</p>
+                        </div>
+                        <p class="capt h4"><img src="icons/user.svg" alt=""> Контактные данные</p>
+                        <div class="row_input">
+                            <label for="first_name">Имя</label>
+                            <input id="first_name" type="text" name="first_name" required>
+                        </div>
+                        <div class="row_input">
+                            <label for="last_name">Фамилия</label>
+                            <input id="last_name" type="text" name="last_name" required>
+                        </div>
+                        <div class="row_input">
+                            <label for="phone">Телефон</label>
+                            <input id="phone" type="text" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="user_data">
+                        <p class="capt h4"><img src="icons/truck.svg" alt=""> Данные для доставки</p>
+                        <div class="row_input">
+                            <label for="city">Город</label>
+                            <input id="city" type="text" name="city" required>
+                        </div>
+                        <div class="row_input">
+                            <label for="address">Адрес доставки</label>
+                            <input id="address" type="text" name="address" required>
+                        </div>
+                    </div>
+
+                    <div class="user_info">
+                        <img src="icons/phone-call.svg" alt="">
+                        <p>После оформления заказа с вами свяжется менеджер для уточнения деталей</p>
+                    </div>
+
+                    <div class="btn">
+                        <button type="submit" class="color_btn cart_final_btn">Оформить заказ</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="cart_ok wrap_final_screen">
+            <div class="final_screen">
+                <div class="in">
+                    <div class="img">
+                        <img src="icons/final_icon.svg" alt="">
+                    </div>
+                    <div class="desc">
+                        <p class="h4">Ваш заказ оформлен, наш менеджер свяжется с вами  в ближайшее время</p>
+                    </div>
+                    <div class="info">
+                        <span class="h4">Ваш номер заказа: <span>563958</span></span>
+                    </div>
+                </div>
+                <div class="in">
+                    <div class="img">
+                        <img src="icons/final_icon_redirect.svg" alt="">
+                    </div>
+                    <div class="desc">
+                        <p class="h4">Сейчас вы будете перенаправлены на сайт партнера для заполнения данных</p>
+                    </div>
+                    <div class="info">
+                        <span class="h4">10 сек</span>
+                    </div>
+                    <div class="btn">
+                        <a href="#" class="color_btn">Перейти </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart_empty wrap_final_screen">
+            <div class="final_screen">
+                <div class="in">
+                    <div class="img">
+                        <img src="icons/cart_empty.svg" alt="">
+                    </div>
+                    <div class="desc">
+                        <p class="h4">В корзине пока ничего нет</p>
+                    </div>
+                    <div class="btn">
+                        <a href="#" class="color_btn">Перейти в каталог </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap_accessory_inline cart_last_block">
+            <div class="accessory_inline">
+                <div class="head">
+                    <h2>Смотрите также</h2>
+                </div>
+                <div class="body">
+                    <div class="wrap_items">
+        
+                        <div class="card_type_1">
+                            <div class="img">
+                                <a href="#">
+                                    <img src="images/add_accessories_earbuds.png" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <h4><a href="#">iPhone 12 64 гб</a></h4>
+                                <span class="h5">от 1200 руб.</span>
+                            </div>
+                            <div class="btn">
+                                <span class="color_btn">В корзину</span>
+                            </div>
+                        </div>
+        
+                        <div class="card_type_1">
+                            <div class="img">
+                                <a href="#">
+                                    <img src="images/add_accessories_earbuds.png" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <h4><a href="#">iPhone 12 64 гб</a></h4>
+                                <span class="h5">от 1200 руб.</span>
+                            </div>
+                            <div class="btn">
+                                <span class="color_btn">В корзину</span>
+                            </div>
+                        </div>
+        
+                        <div class="card_type_1">
+                            <div class="img">
+                                <a href="#">
+                                    <img src="images/add_accessories_earbuds.png" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <h4><a href="#">iPhone 12 64 гб</a></h4>
+                                <span class="h5">от 1200 руб.</span>
+                            </div>
+                            <div class="btn">
+                                <span class="color_btn">В корзину</span>
+                            </div>
+                        </div>
+        
+                        <div class="card_type_1">
+                            <div class="img">
+                                <a href="#">
+                                    <img src="images/add_accessories_earbuds.png" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <h4><a href="#">iPhone 12 64 гб</a></h4>
+                                <span class="h5">от 1200 руб.</span>
+                            </div>
+                            <div class="btn">
+                                <span class="color_btn">В корзину</span>
+                            </div>
+                        </div>
+        
+                        <div class="card_type_1">
+                            <div class="img">
+                                <a href="#">
+                                    <img src="images/add_accessories_earbuds.png" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <h4><a href="#">iPhone 12 64 гб</a></h4>
+                                <span class="h5">от 1200 руб.</span>
+                            </div>
+                            <div class="btn">
+                                <span class="color_btn">В корзину</span>
+                            </div>
+                        </div>
+        
+                        <div class="card_type_1">
+                            <div class="img">
+                                <a href="#">
+                                    <img src="images/add_accessories_earbuds.png" alt="">
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <h4><a href="#">iPhone 12 64 гб</a></h4>
+                                <span class="h5">от 1200 руб.</span>
+                            </div>
+                            <div class="btn">
+                                <span class="color_btn">В корзину</span>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <div class="more_items">
+                        <a href="#" class="h5">Смотреть все аксессуары</a>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="wrap">
+        <div class="head">
+            <a href="/">
+                <img src="icons/logo_black.svg" alt="">
+            </a>
+            <a href="#" class="color_btn modal_button" data-id="popup_callback">Заказать звонок</a>
+        </div>
+        <div class="body">
+
+            <div class="f_info">
+                <div class="capt">
+                    <span>Информация</span>
+                </div>
+                <div class="text">
+                    <div class="f_contact">
+                        <a href="tel:+375445124633" class="h5">+375(44)512-46-33</a>
+                        <a href="mailto:info@resty.by" class="h5">info@resty.by</a>
+                    </div>
+                    <div class="f_place">
+                        <div class="f_adr">
+                            <a href="#">Минск, Тимирязева, 114</a>
+                        </div>
+                        <div class="f_time">
+                            <p>График работы</p>
+                            <p>Пн-пт: 10:00-19:00</p>
+                            <p>Сб: 10:00-19:00</p>
+                            <p>Вс: Выходной</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="f_nets">
+                    <a href="" target="_blank"><img src="icons/instagram_social_icon.svg" alt=""></a>
+                    <a href="" target="_blank"><img src="icons/tikTok_social_icon.svg" alt=""></a>
+                    <a href="" target="_blank"><img src="icons/telegram_social_icon.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="f_menu f_block">
+                <div class="capt">
+                    <span>Resty</span>
+                </div>
+                <ul>
+                    <li><a href="" class="h5">Купить</a></li>
+                    <li><a href="" class="h5">Продать</a></li>
+                    <li><a href="" class="h5">Сервис</a></li>
+                    <li><a href="" class="h5">Новости</a></li>
+                    <li><a href="" class="h5">О Resty</a></li>
+                </ul>
+            </div>
+
+            <div class="f_goods f_block">
+                <div class="capt">
+                    <span>Устройства</span>
+                </div>
+                <ul>
+                    <li><a href="" class="h5">iPhone 12</a></li>
+                    <li><a href="" class="h5">iPhone 12</a></li>
+                    <li><a href="" class="h5">iPhone 12</a></li>
+                    <li><a href="" class="h5">iPhone 12</a></li>
+                    <li><a href="" class="h5">iPhone 12</a></li>
+                    <li><a href="" class="h5">iPhone 12</a></li>
+                    <li><a href="" class="h5">iPhone 12</a></li>
+                    <li><a href="" class="h5">iPhone 12</a></li>
+                    <li><a href="" class="h5">iPhone 12</a></li>
+                    <li><a href="" class="h5">iPhone 12</a></li>
+                    <li><a href="" class="h5">iPhone 12</a></li>
+                    <li><a href="" class="h5">iPhone 12</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="foot">
+            <p>ООО «РестиБай Маркет» УНП 193792655 BY56ALFA30122F66010010270000 в ЗАО Альфа-банк, БИК ALFABY2X ул. Тимиризева 126, помещение 83</p>
+        </div>
+    </div>
+</footer>
+
+<!--Modal popups-->
+<div id="popup_callback" class="modal modal_form">
+    <div class="modal_content">
+
+        <div class="modal_form_content_window">
+            <div class="form_head h5">Введите ваши контактные данные и мы свяжемся с вами</div>
+            <div class="form_body">
+                <form>
+                    <div class="item">
+                        <label for="first_name" class="h6">Имя</label>
+                        <input type="text" name="first_name" id="first_name">
+                    </div>
+                    <div class="item">
+                        <label for="last_name" class="h6">Фамилия</label>
+                        <input type="text" name="last_name" id="last_name">
+                    </div>
+                    <div class="item">
+                        <label for="phone" class="h6">Телефон</label>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Заказать звонок</button>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+
+        <div class="modal_form_finish_window">
+            <div class="in">
+                <img src="icons/button_ok.svg" alt="">
+                <p class="capt h1">Заказ успешно оформлен</p>
+                <p class="msg">Менеджер перезвонит вам для уточнения деталей.</p>
+            </div>
+        </div>
+
+        <span class="form_close modal_close"></span>
+    </div>
+</div>
+
+
+<div id="popup_cart" class="modal modal_form modal_card">
+    <div class="modal_content">
+
+        <div class="modal_form_content_window">
+
+            <div id="comp_1">
+
+                <div class="head_page">
+                    <span class="h1">Silicon case iPhone 15 Pro</span>
+                </div>
+    
+                <div class="card_price">
+                    <div class="select_with_resty markup_type1">
+                        <div class="part_price">
+                            <span class="price h3">90 руб. в месяц</span>
+                            <span class="month h6">11 месяцев</span>
+                        </div>
+                        <div class="full_price">
+                            <span class="h5">Итоговая стоимость</span>
+                            <span class="h5">1000 руб</span>
+                        </div>
+                    </div>
+                    <div class="select_buy_now" style="display: none;">
+                        <span class="price h3">1000 BYN</span>
+                    </div>
+                </div>
+    
+                <div class="card_switcher markup_type1">
+                    <h5>Способ покупки</h5>
+                    <div class="switcher">
+                        <span class="buy_with_resty h5 active">Купить с Resty</span>
+                        <span class="buy_now h5">Купить сразу</span>
+                    </div>
+                </div>
+    
+                <div class="switcher_tabs">
+                    <h5>Срок</h5>
+                    <div class="wrap_radio">
+                        <div class="form_radio">
+                            <input id="period_pay_1" type="radio" name="period_pay" value="1" checked>
+                            <label for="period_pay_1">
+                                <span class="caption h5">12 месяцев</span>
+                                <img src="/icons/done.svg" alt="">
+                            </label>
+                        </div>
+                        <div class="form_radio">
+                            <input id="period_pay_2" type="radio" name="period_pay" value="2">
+                            <label for="period_pay_2">
+                                <span class="caption h5">24 месяца</span>
+                                <img src="/icons/done.svg" alt="">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card_img markup_type1">
+                    <div class="main_img">
+                        <img src="/images/product_accessories_phone.png" alt="">
+
+                    </div>
+                </div>
+    
+   
+                <div class="card_body">
+                    <form>   
+                        <div class="card_item markup_type1">
+                            <h5>Цвет</h5>
+                            <div class="wrap_radio">
+    
+                                <div class="form_radio">
+                                    <input id="color_1" type="radio" name="color" value="1" checked>
+                                    <label for="color_1">
+                                        <span class="color" style="background:#000000;"></span>
+                                        <img src="/icons/done.svg" alt="">
+                                        <span class="cost">Чёрный</span>
+                                    </label>
+                                </div>
+                                <div class="form_radio">
+                                    <input id="color_2" type="radio" name="color" value="2" disabled>
+                                    <label for="color_2">
+                                        <span class="color" style="background:#FF0000;"></span>
+                                        <img src="/icons/done.svg" alt="">
+                                        <span class="cost">Красный</span>
+                                    </label>
+                                </div>
+                                <div class="form_radio">
+                                    <input id="color_3" type="radio" name="color" value="3">
+                                    <label for="color_3">
+                                        <span class="color" style="background:#7D7DE6;"></span>
+                                        <img src="/icons/done.svg" alt="">
+                                        <span class="cost">Голубой</span>
+                                    </label>
+                                </div>
+                                <div class="form_radio">
+                                    <input id="color_4" type="radio" name="color" value="4">
+                                    <label for="color_4">
+                                        <span class="color" style="background:#FFFFFF;"></span>
+                                        <img src="/icons/done.svg" alt="">
+                                        <span class="cost">Белый</span>
+                                    </label>
+                                </div>
+    
+                                <div class="form_radio">
+                                    <input id="color_5" type="radio" name="color" value="5">
+                                    <label for="color_5">
+                                        <span class="color" style="background:#000000;"></span>
+                                        <img src="/icons/done.svg" alt="">
+                                        <span class="cost">Чёрный</span>
+                                    </label>
+                                </div>
+                                <div class="form_radio">
+                                    <input id="color_6" type="radio" name="color" value="6" disabled>
+                                    <label for="color_6">
+                                        <span class="color" style="background:#FF0000;"></span>
+                                        <img src="/icons/done.svg" alt="">
+                                        <span class="cost">Красный</span>
+                                    </label>
+                                </div>
+                                <div class="form_radio">
+                                    <input id="color_7" type="radio" name="color" value="7">
+                                    <label for="color_7">
+                                        <span class="color" style="background:#7D7DE6;"></span>
+                                        <img src="/icons/done.svg" alt="">
+                                        <span class="cost">Голубой</span>
+                                    </label>
+                                </div>
+                                <div class="form_radio">
+                                    <input id="color_8" type="radio" name="color" value="7">
+                                    <label for="color_8">
+                                        <span class="color" style="background:#FFFFFF;"></span>
+                                        <img src="/icons/done.svg" alt="">
+                                        <span class="cost">Белый</span>
+                                    </label>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                        <div class="card_summary markup_type1">
+                            <div class="wrap_summary">
+                                <div class="summary_btn">
+                                    <button type="submit" class="color_btn">Добавить в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </form>
+                </div>
+    
+                <!-- <div id="promo"></div>
+                <div id="accessories"></div>
+                <div id="how_resty_work"></div> -->
+            </div>
+
+        </div>
+
+        <!-- <div class="modal_form_finish_window">
+            <div class="in">
+                <img src="icons/button_ok.svg" alt="">
+                <p class="capt h1">Заказ успешно оформлен</p>
+                <p class="msg">Менеджер перезвонит вам для уточнения деталей.</p>
+            </div>
+        </div> -->
+
+        <span class="form_close modal_close"></span>
+    </div>
+</div>
+<!--Modal popups end-->
+<div class="go_to_top in_cart"></div>
+
+<!-- <div id="popup_callback" class="modal modal_form">
+    <div class="modal_content">
+        <div class="form_head h5">Заказать звонок</div>
+        <p>Оставьте ваш номер телефона и наш менеджер перезвонит вам.</p>
+        <div class="form_body">
+            <form>
+                <div class="item">
+                    <label for="first_name" class="h6">Имя</label>
+                    <input type="text" name="first_name" id="first_name">
+                </div>
+                <div class="item">
+                    <label for="phone" class="h6">Телефон</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+                <div class="btn">
+                    <button type="submit">Заказать звонок</button>
+                </div>
+            </form>
+            <span class="form_close modal_close"></span>
+        </div>
+    </div>
+</div> -->
+
+<!-- Модальное окно для О рести -->
+<div id="popup_about_resty" class="modal modal_form about_resty">
+    <div class="modal_content">
+
+        <div class="modal_form_content_window">
+            <div class="form_head h5">Как это работает?</div>
+            <div class="about_resty_video" data-kod_youtube="go7pMITIfBs">
+                <div class="iframe"></div>
+                <div class="video" style="background: url(/images/img_about.jpg) no-repeat center;background-size:cover;"><span></span></div>
+            </div>
+            <div class="capt">
+                <span class="h5">После 12 месяцев </span>
+            </div>
+            <div class="info">
+                <div class="item">
+                    <div class="left">
+                        <img src="icons/icon_info_refresh.svg" alt="">
+                        <span class="h6">Замена на новую модель</span>
+                    </div>
+                    <div class="right">
+                        <p>SEO text —  enim eu tortor urna sed duis nulla. Aliquam vestibulum, nulla odio nisl vitae. In aliquet pellentesque aenean hac vestibulum turpis mi bibendum diam. Tempor integer aliquam in vitae malesuada fringilla.SEO text —  enim eu tortor urna sed duis nulla. Aliquam v</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="left">
+                        <img src="icons/icon_info_dollar.svg" alt="">
+                        <span class="h6">Выкуп устройства</span>
+                    </div>
+                    <div class="right">
+                        <p>SEO text —  enim eu tortor urna sed duis nulla. Aliquam vestibulum, nulla odio nisl vitae. In aliquet pellentesque aenean hac vestibulum turpis mi bibendum diam. Tempor integer aliqua</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="left">
+                        <img src="icons/icon_info_corner.svg" alt="">
+                        <span class="h6">Вернуть устройство</span>
+                    </div>
+                    <div class="right">
+                        <p>SEO text —  enim eu tortor urna sed duis nulla. Aliquam vestibulum, nulla odio nisl vitae. In aliquet pellentesque aenean hac vestibulum turpis mi bibendum diam. Tempor integer aliquam in vitae malesuada fringilla.SEO text —  enim eu tortor urna sed duis nulla. Aliquam vestibulum, nulla odio nisl vitae. In aliquet pellentesque aenean hac vestibulum turpis mi bibendum diam. Tempor integer aliquam in vitae malesuada fringilla.</p>
+                    </div>
+                </div>
+                <div class="item_dop">
+                    <div class="left">
+                        <img src="icons/icon_info_alert.svg" alt="">
+                    </div>
+                    <div class="right">
+                        <p>SEO text —  enim eu tortor urna sed duis nulla. Aliquam vestibulum, nulla odio nisl vitae. In aliquet pellentesque aenean ha</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <span class="form_close modal_close"></span>
+    </div>
+</div>
+<!--Модальное окно для О рести end-->
+
+
+
+<script src="script.js"></script>
+<script src="js/main.js"></script>
+<!-- <script src="js/upd_catalog.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/menu.js"></script> -->
+
+
+
+
+</body>
+</html>

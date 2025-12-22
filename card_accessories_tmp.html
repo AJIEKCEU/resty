@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- <link rel="stylesheet" href="styles/service.css"> -->
+
+    <link rel="stylesheet" href="css/upd/style_common.css">
+    <link rel="stylesheet" href="css/upd/style_card.css">
+    <link rel="stylesheet" href="css/upd/style_popup_video.css">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="swiper/swiper-bundle.css">
+    <script src="swiper/swiper-bundle.js"></script>
+    <script src="fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="fancybox/fancybox.css"/>
+
+    <title>Каталог</title>
+</head>
+<body>
+<!-- <header id="header"></header> -->
+<main>
+    <div class="card accessory wrap">
+        <div id="comp_1">
+
+            <div class="card_head_ markup_type1_ head_page">
+                <div id="breadcrumbs"></div>
+                <h1 class="h1">iPhone X</h1>
+            </div>
+            <div class="card_price">
+                <div class="select_buy_now">
+                    <span class="price h3">220 руб.</span>
+                </div>
+            </div>
+
+            <div class="card_img markup_type1">
+                <div class="main_img">
+                    <img src="/images/product_accessories_phone.png" alt="">
+                </div>
+                <div class="gallery_img">
+                    <div class="item active"><div><img src="/images/product_accessories_phone.png" alt=""></div></div>
+                    <div class="item"><div><img src="/images/product_accessories_phone.png" alt=""></div></div>
+                    <div class="item"><div><img src="/images/product_accessories_phone.png" alt=""></div></div>
+                    <div class="item"><div><img src="/images/product_accessories_phone.png" alt=""></div></div>
+                    <div class="item"><div><img src="/images/product_accessories_phone.png" alt=""></div></div>
+                </div>
+            </div>
+
+            <div class="card_body">
+                <form>
+
+                    <div class="card_item markup_type1">
+                        <h5>Цвет</h5>
+                        <div class="wrap_radio">
+
+                            <div class="form_radio">
+                                <input id="color_1" type="radio" name="color" value="1" checked>
+                                <label for="color_1">
+                                    <span class="color" style="background:#000000;"></span>
+                                    <img src="/icons/done.svg" alt="">
+                                    <span class="cost">+100 руб.</span>
+                                </label>
+                            </div>
+                            <div class="form_radio">
+                                <input id="color_2" type="radio" name="color" value="2" disabled>
+                                <label for="color_2">
+                                    <span class="color" style="background:#FF0000;"></span>
+                                    <img src="/icons/done.svg" alt="">
+                                    <span class="cost">+100 руб.</span>
+                                </label>
+                            </div>
+                            <div class="form_radio">
+                                <input id="color_3" type="radio" name="color" value="3">
+                                <label for="color_3">
+                                    <span class="color" style="background:#7D7DE6;"></span>
+                                    <img src="/icons/done.svg" alt="">
+                                    <span class="cost">+10 руб.</span>
+                                </label>
+                            </div>
+                            <div class="form_radio">
+                                <input id="color_4" type="radio" name="color" value="4">
+                                <label for="color_4">
+                                    <span class="color" style="background:#FFFFFF;"></span>
+                                    <img src="/icons/done.svg" alt="">
+                                    <span class="cost">+10 руб.</span>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="accessory_card_summary markup_type1">
+                        <div class="wrap_summary">
+                            <div class="summary_btn">
+                                <button type="submit" class="color_btn">Добавить в корзину</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+        <!-- <div id="promo"></div>
+        <div id="accessories"></div>
+        <div id="how_resty_work"></div> -->
+    </div>
+</main>
+
+<!-- <footer id="footer"></footer> -->
+
+
+<script src="script.js"></script>
+
+<script src="js/card.js"></script>
+<script src="js/popup_video.js"></script>
+
+
+<!-- Модальное окно для видео -->
+<div id="popup_video" class="modal_video modal_video_form">
+    <div class="modal_video_content">
+        <!-- Сюда скриптом вставляется/удаляется видеофрейм -->
+    </div>
+    <span class="form_video_close modal_video_close"></span>
+</div>
+
+
+</body>
+</html>

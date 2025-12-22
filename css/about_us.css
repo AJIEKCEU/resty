@@ -1,0 +1,141 @@
+.how_resty_work_txt > h2 > span {
+    background: var(--Brand-Gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.resty_algorithm {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.resty_steps, .resty_benefits {
+    padding-top: 64px;
+    border-top: 1px solid var(--main-color-Grey2);
+}
+
+.steps, .benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding-top: 32px;
+}
+
+.step_item {
+    width: 340px;
+    height: 280px;
+    background: var(--main-color-Grey1);
+    border-radius: 24px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.step_number {
+    font-size: 75.51px;
+    line-height: 75.51px;
+    font-weight: 600;
+    letter-spacing: 0;
+    background: var(--Brand-Gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.resty_benefit_item {
+    max-width: 340px;
+    height: 238px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border-radius: 24px;
+    justify-content: space-between;
+    background: var(--main-color-Grey1);
+}
+
+
+.img_about_us {
+    width: 100%;
+}
+
+.text_about_us {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    max-width: 896px;
+    margin: 0 auto;
+    padding-top: 48px;
+}
+
+.part_text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.question {
+padding: 96px 0 32px 0;
+}
+
+.background {
+    background: var(--main-color-Grey1);
+    border-radius: 32px;
+    height: 293px;
+    width: 100%;
+    display: flex;
+    gap: 32px;
+    padding: 0 64px;
+    align-items: center;
+}
+
+.main_question {
+    display: flex;
+    gap: 32px;
+    max-width: 672px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.text_question {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.btn_question{
+    max-width: 297px;
+    width: 100%;
+    padding: 12px 24px;
+    background: var(--Brand-Gradient);
+    border-radius: 16px;
+    border: none;
+    text-align: center;
+    color: var(--main-color-White);
+}
+.img_question{
+    height: inherit;
+    position: relative;
+    img{
+        position: absolute;
+        bottom: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    .about_us.wrapper {
+        padding-top: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about_us.wrapper {
+        padding-top: 16px;
+    }
+
+    .img_about_us {
+        margin: 0;
+    }
+}

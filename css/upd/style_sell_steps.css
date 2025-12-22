@@ -1,0 +1,488 @@
+/*-------------------sell_steps----------------------*/
+.sell_steps {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.sell_steps form {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.sell_steps form .progresbar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 44px 1fr 38px;
+    gap: 16px;
+    align-items: center;
+}
+.sell_steps form .progresbar .swiper_arrow_left {
+    background: var(--main-color-Grey1) url(../../icons/arrow-left.svg) no-repeat center center;
+    transform: rotate(0);
+    transition: background-color 0.2s;
+}
+.sell_steps form .progresbar .swiper_arrow_left:hover {
+    background-color: var(--main-color-Grey1-hover);
+}
+.sell_steps form .progresbar .steps_indicator {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.sell_steps form .progresbar .steps_indicator .all_bar {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 8px;
+    background: var(--main-color-Grey2);
+    border-radius: 48px;
+    overflow: hidden;
+}
+.sell_steps form .progresbar .steps_indicator .all_bar .current_bar {
+    display: block;
+    width: 0;
+    max-width: 100%;
+    height: 100%;
+    background: var(--Brand-Gradient);
+    border-radius: 48px;
+}
+.sell_steps form .progresbar .steps_label {
+    font-weight: 600;
+    text-align: right;
+}
+
+
+.sell_steps form .wrap_steps {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.sell_steps form .wrap_steps .steps_summary {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+}
+.sell_steps form .wrap_steps .steps_summary .summary_body {
+    border: 1px solid var(--main-color-Grey2);
+    border-radius: 24px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.sell_steps form .wrap_steps .steps_summary .summary_body .summary_result {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.sell_steps form .wrap_steps .steps_summary .summary_body .summary_result .summary_result_head {
+    position: relative;
+    background: var(--main-color-Grey1);
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+.sell_steps form .wrap_steps .steps_summary .summary_body .summary_result .summary_result_head::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: var(--main-color-Grey2);
+    left: 0;
+    bottom: -16px;
+}
+.sell_steps form .wrap_steps .steps_summary .summary_body .summary_result .summary_result_head .h1 {
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 600;
+    color: var(--main-color-Black);
+}
+.sell_steps form .wrap_steps .steps_summary .summary_body .summary_result .summary_result_details .row {
+    padding: 12px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid var(--main-color-Grey2);
+}
+.sell_steps form .wrap_steps .steps_summary .summary_body .summary_result .summary_result_details .row:last-child {
+    border-bottom: none;
+}
+.sell_steps form .wrap_steps .steps_summary .summary_body .summary_result .summary_result_details .row .value {
+    font-weight: 600;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    background: var(--main-color-Grey1);
+    text-align: right;
+}
+.sell_steps form .wrap_steps .steps_summary .summary_body .summary_btn_clear span {
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+
+
+.sell_steps form .wrap_steps .step_items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+
+
+
+
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question {
+    background: var(--main-color-Grey1);
+    border-radius: 27px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .head {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .head span {
+    display: block;
+    font-weight: 600;
+    color: var(--main-color-Grey3);
+}
+
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .img {
+    width: 100%;
+    aspect-ratio: 420/478;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .info {
+    position: relative;
+    background: var(--main-color-White);
+    border-radius: 16px;
+    padding: 12px 12px 12px 48px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .info::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url(../../icons/info.svg) no-repeat;
+    top: calc(50% - 12px);
+    left: 12px;
+}
+
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .radio {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .radio .row_radio input[type="radio"] {
+    display: none;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .radio .row_radio label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    min-height: 44px;
+    padding: 12px;
+    border: 1px solid var(--main-color-Grey2);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .radio .row_radio label:hover {
+    background-color: #eee;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .radio .row_radio label div {
+    width: 100%;
+    aspect-ratio: 396/169;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .radio .row_radio label div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .radio .row_radio label span {
+    position: relative;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    display: block;
+    padding-left: 28px;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .radio .row_radio label span::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--main-color-Grey2);
+    background: var(--main-color-White);
+    border-radius: 50%;
+    top: calc(50% - 9px);
+    left: 0;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .radio .row_radio label p {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--main-color-Grey3);
+}
+
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .radio .row_radio input[type="radio"]:checked + label {
+    padding: 10px;
+    border: 3px solid transparent;
+    background: linear-gradient(var(--main-color-Grey1), var(--main-color-Grey1)) padding-box, var(--Brand-Gradient) border-box;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .radio .row_radio input[type="radio"]:checked + label span::before {
+    border: 1px solid #B90D01;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .radio .row_radio input[type="radio"]:checked + label span::after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #B90D01;
+    border-radius: 50%;
+    top: calc(50% - 3px);
+    left: 6px;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .separ {
+    position: relative;
+    width: 100%;
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    color: var(--main-color-Grey3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .separ span {
+    z-index: 1;
+    display: inline-block;
+    padding: 0 10px;
+    background: var(--main-color-Grey1);
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .separ::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #DEDEDE;
+    left: 0;
+    top: 50%;
+}
+
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .checkbox .row_checkbox input[type="checkbox"] {
+    display: none;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .checkbox .row_checkbox label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 14px 10px 42px;
+    border: 1px solid var(--main-color-Grey2);
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .checkbox .row_checkbox label:hover {
+    background-color: #eee;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .checkbox .row_checkbox label::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--main-color-Grey2);
+    background: var(--main-color-White);
+    border-radius: 4px;
+    top: calc(50% - 9px);
+    left: 14px;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .checkbox .row_checkbox input[type="checkbox"]:checked + label {
+    padding: 8px 12px 8px 40px;
+    border: 3px solid transparent;
+    background: linear-gradient(var(--main-color-Grey1), var(--main-color-Grey1)) padding-box, var(--Brand-Gradient) border-box;
+}
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .checkbox .row_checkbox input[type="checkbox"]:checked + label::before {
+    left: 12px;
+    border-color: #B90D01;
+    background-color: #FD5925;
+    background-image: url(../../icons/check.svg);
+    background-size: 90%;
+    background-position: 80% 50%;
+    background-repeat: no-repeat;
+}
+
+.sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question .btn .inactive {
+    background: var(--main-color-Grey3);
+    cursor: not-allowed;
+}
+
+.wrap_user_data {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.wrap_user_data .capt {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.wrap_user_data .user_data {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.wrap_user_data .user_info {
+    background: var(--main-color-Grey1);
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.wrap_user_data .form_caption {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+.wrap_user_data .form_caption .cart_back {
+    display: inline-flex !important;
+    align-items: center;
+    background: var(--main-color-Grey1);
+    border-radius: 12px;
+    padding: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.wrap_user_data .form_caption .cart_back:hover {
+    background: var(--main-color-Grey1-hover);
+}
+.wrap_user_data .form_caption .cart_back img {
+    margin-right: 10px;
+}
+
+
+/* .final_screen {
+    width: 100%;
+    background: var(--main-color-Grey1);
+    padding: 16px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.final_screen .in {
+    width: 100%;
+    max-width: 510px;
+    background: var(--main-color-White);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 16px;
+}
+.final_screen .in .info {
+    text-align: center;
+}
+.final_screen .in .info span {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 16px;
+    background: var(--main-color-Grey1);
+} */
+@media only screen and (min-width:768px) {
+    .sell_steps {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .sell_steps form {
+        gap: 32px;
+    }
+    .sell_steps form .progresbar {
+        width: 100%;
+        gap: 32px;
+    }
+    .sell_steps form .wrap_steps {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        align-items: flex-start;
+    }
+    .sell_steps form .wrap_steps .steps_summary {
+        display: flex;
+    }
+    .sell_steps form .wrap_steps .step_items .step_items_body .step_item .inner_wrap .question {
+        padding: 32px;
+    }
+
+    .sell_steps form .wrap_steps .steps_summary .summary_body .summary_result .summary_result_head {
+        padding: 24px;
+        gap: 16px;
+    }
+    .sell_steps form .wrap_steps .steps_summary .summary_body .summary_result .summary_result_head .h1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    /* .sell_steps .final_screen {
+        min-height: 424px;
+        padding: 48px;
+    }
+    .sell_steps .final_screen .in {
+        padding: 24px;
+    }
+    .sell_steps .final_screen .in .desc p {
+        font-size: 20px;
+        line-height: 30px;
+    } */
+
+    .sell_steps .accessory_inline {
+        padding-bottom: 16px;
+    }
+}
+/*-------------------sell_steps end----------------------*/

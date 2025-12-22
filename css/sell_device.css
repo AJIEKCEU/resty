@@ -1,0 +1,336 @@
+.sell_device.wrapper {
+    padding: 48px 0 0 0;
+}
+
+.sell_device {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+form {
+    display: flex;
+}
+
+.select {
+    max-width: 672px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    column-gap: 4px;
+    background: var(--main-color-Grey1);
+    border-radius: 16px;
+
+    form {
+        column-gap: 16px;
+    }
+}
+
+.select input[type=radio],
+.device_type input[type=radio],
+.device_year input[type=radio],
+.device_model input[type=radio],
+.state_device input[type=radio],
+.state_display input[type=radio],
+.memory_device input[type=radio] {
+    display: none;
+}
+
+.select input[type=radio]:checked + label {
+    background: var(--Brand-Gradient);
+    padding: 12px 24px;
+    width: 50%;
+    border: none;
+    color: var(--main-color-White);
+    border-radius: 20px;
+}
+
+.select_radio {
+    width: 100%;
+}
+
+.label_s {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.device_type,
+.device_model {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    form {
+        column-gap: 20px;
+    }
+}
+
+.carousel_inner {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    column-gap: 8px;
+}
+.carousel_state_device{
+    display: flex;
+    width: 100%;
+}
+
+.carousel_item_device_type,
+.carousel_item_model_device {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    align-items: center;
+
+    img {
+        width: 100%;
+    }
+}
+
+.device_type label,
+.device_year label,
+.state_device label,
+.state_display label,
+.memory_device label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.device_type input[type=radio]:checked + label,
+.device_model input[type=radio]:checked + label {
+    border: 3px solid transparent;
+    border-radius: 16px;
+    background: linear-gradient(var(--main-color-Grey1), var(--main-color-Grey1)) padding-box,
+    var(--Brand-Gradient) border-box;
+}
+
+.carousel_item_device_year,
+.carousel_item_state_device,
+.carousel_item_state_display,
+.carousel_item_memory_device {
+    width: 100%;
+}
+
+.device_year,
+.state_device,
+.state_display,
+.memory_device {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    form {
+        column-gap: 8px;
+    }
+}
+
+.device_year label,
+.state_device label,
+.state_display label,
+.memory_device label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.device_year input[type=radio]:checked + label,
+.state_device input[type=radio]:checked + label,
+.state_display input[type=radio]:checked + label,
+.memory_device input[type=radio]:checked + label {
+    border: 3px solid transparent;
+    border-radius: 15px;
+    background: linear-gradient(var(--main-color-Grey1), var(--main-color-Grey1)) padding-box,
+    var(--Brand-Gradient) border-box;
+}
+
+.carousel_item_device_year label,
+.carousel_item_state_device label,
+.carousel_item_state_display label,
+.carousel_item_memory_device label {
+    max-width: 162px;
+    padding: 10px;
+    background: var(--main-color-Grey1);
+    height: 50px;
+}
+
+.option_device {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+    max-width: 672px;
+}
+
+.form_state_display {
+    max-width: 332px;
+}
+
+.add_device_to_pa {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background: var(--main-color-Grey1);
+    border-radius: 20px;
+    padding: 16px;
+    max-width: 672px;
+}
+
+.add_device_to_pa_text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.btn_add_device_to_pa {
+    padding: 12px 24px;
+    background: var(--Brand-Gradient);
+    border-radius: 16px;
+    border: none;
+}
+
+.our_offer {
+    max-width: 672px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.our_offer_border {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    padding: 16px;
+    border-radius: 24px;
+    border: 1px solid var(--main-color-Grey2);
+}
+
+.our_offer_info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.our_offer_choice {
+    border-bottom: 1px solid var(--main-color-Grey2);
+}
+
+.offer_state,
+.offer_display_state,
+.offer_memory {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-top: 1px solid var(--main-color-Grey2);
+}
+
+.offer_parameter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 12px;
+    background: var(--main-color-Grey1);
+}
+
+.btn_our_offer {
+    padding: 12px 24px;
+    background: var(--Brand-Gradient);
+    border-radius: 16px;
+    border: none;
+}
+
+@media screen and (max-width: 1600px) {
+    .carousel_item_model_device:nth-child(n+8) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .carousel_item_model_device:nth-child(n+6) {
+        display: none;
+    }
+
+    .carousel_item_device_year label > h5 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .type_device {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .carousel_item_model_device:nth-child(n+5) {
+        display: none;
+    }
+
+    .carousel_item_device_year:nth-child(n+7) {
+        display: none;
+    }
+.carousel_state_device,
+.carousel_item_model_device{
+    column-gap: 8px;
+}
+}
+
+@media screen and (max-width: 576px) {
+    .select_radio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .select input[type=radio]:checked + label {
+        width: 100%;
+    }
+
+    .label_s {
+        padding: 12px 24px;
+        width: 100%;
+    }
+
+    .carousel_item_device_type:nth-child(n+3) {
+        display: none;
+    }
+
+    .carousel_inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 8px;
+        row-gap: 8px;
+    }
+
+    .carousel_item_device_year:nth-child(n+7) {
+        display: inherit;
+    }
+
+    .carousel_item_model_device:nth-child(n+5) {
+        display: none;
+    }
+
+    .device_model {
+        display: none;
+    }
+
+    .carousel_state_device {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        row-gap: 8px;
+        column-gap: 8px;
+
+    }
+
+    .carousel_state_device {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

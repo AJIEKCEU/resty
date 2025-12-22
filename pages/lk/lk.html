@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/lk.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Личный кабинет</title>
+</head>
+<body>
+<header id="header"></header>
+<main>
+    <div class="lk wrapper">
+        <div id="breadcrumbs"></div>
+        <div class="add_device">
+            <h2>Ваши устройства</h2>
+            <a href="#" class="btn_add_device">
+                <h5>Добавить устройство</h5>
+                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 7.28455V15.2845M7 11.2845H15M21 11.2845C21 16.8074 16.5228 21.2845 11 21.2845C5.47715 21.2845 1 16.8074 1 11.2845C1 5.7617 5.47715 1.28455 11 1.28455C16.5228 1.28455 21 5.7617 21 11.2845Z"
+                          stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+        <div class="your_device">
+            <div class="your_device_card">
+                <div class="img_your_device_card">
+                    <img src="../../images/lk_iPhone.png" alt="iPhone">
+                    <svg width="55" height="33" viewBox="0 0 55 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 12.2845C0 5.65713 5.37258 0.284546 12 0.284546H43C49.6274 0.284546 55 5.65713 55 12.2845V20.2845C55 26.912 49.6274 32.2845 43 32.2845H12C5.37258 32.2845 0 26.912 0 20.2845V12.2845Z"
+                              fill="url(#paint0_linear_1141_13158)"/>
+                        <path d="M9.00426 21.2845V11.1027H12.8224C13.6046 11.1027 14.2609 11.2386 14.7912 11.5104C15.3248 11.7822 15.7275 12.1633 15.9993 12.6539C16.2744 13.1411 16.4119 13.7095 16.4119 14.3591C16.4119 15.0121 16.2727 15.5788 15.9943 16.0594C15.7192 16.5367 15.3132 16.9062 14.7763 17.1681C14.2393 17.4266 13.5798 17.5559 12.7976 17.5559H10.0781V16.0246H12.549C13.0064 16.0246 13.3809 15.9616 13.6726 15.8357C13.9643 15.7064 14.1797 15.5192 14.3189 15.2739C14.4614 15.0253 14.5327 14.7204 14.5327 14.3591C14.5327 13.9979 14.4614 13.6896 14.3189 13.4344C14.1764 13.1759 13.9593 12.9803 13.6676 12.8478C13.3759 12.7119 12.9998 12.6439 12.5391 12.6439H10.8487V21.2845H9.00426ZM14.2642 16.6709L16.7848 21.2845H14.7266L12.2507 16.6709H14.2642ZM21.3015 21.4337C20.5359 21.4337 19.8746 21.2746 19.3178 20.9564C18.7643 20.6349 18.3384 20.1809 18.0401 19.5942C17.7418 19.0042 17.5927 18.3099 17.5927 17.5111C17.5927 16.7256 17.7418 16.0362 18.0401 15.4429C18.3417 14.8463 18.7627 14.3823 19.3029 14.0509C19.8432 13.7161 20.4779 13.5488 21.207 13.5488C21.6777 13.5488 22.1218 13.625 22.5394 13.7774C22.9603 13.9266 23.3316 14.1586 23.6531 14.4735C23.9779 14.7883 24.2331 15.1894 24.4187 15.6766C24.6043 16.1605 24.6971 16.7372 24.6971 17.4067V17.9586H18.4379V16.7455H22.9719C22.9686 16.4008 22.8941 16.0942 22.7482 15.8257C22.6024 15.554 22.3986 15.3402 22.1367 15.1844C21.8782 15.0286 21.5766 14.9507 21.2319 14.9507C20.864 14.9507 20.5408 15.0402 20.2624 15.2192C19.984 15.3949 19.7669 15.6269 19.6112 15.9152C19.4587 16.2003 19.3808 16.5135 19.3775 16.8549V17.9138C19.3775 18.3579 19.4587 18.7391 19.6211 19.0573C19.7835 19.3721 20.0105 19.6141 20.3022 19.7831C20.5939 19.9488 20.9353 20.0317 21.3263 20.0317C21.5882 20.0317 21.8252 19.9952 22.0373 19.9223C22.2494 19.8461 22.4334 19.7351 22.5891 19.5892C22.7449 19.4434 22.8626 19.2628 22.9421 19.0473L24.6225 19.2363C24.5165 19.6804 24.3143 20.0682 24.016 20.3996C23.721 20.7277 23.3432 20.9829 22.8825 21.1652C22.4218 21.3442 21.8948 21.4337 21.3015 21.4337ZM32.2551 15.6666L30.6145 15.8456C30.5681 15.6799 30.4869 15.5241 30.3709 15.3783C30.2582 15.2325 30.1058 15.1148 29.9135 15.0253C29.7213 14.9358 29.486 14.8911 29.2076 14.8911C28.833 14.8911 28.5182 14.9723 28.263 15.1347C28.0111 15.2971 27.8868 15.5076 27.8901 15.7661C27.8868 15.9881 27.968 16.1688 28.1337 16.308C28.3027 16.4472 28.5811 16.5615 28.9689 16.651L30.2715 16.9294C30.994 17.0852 31.531 17.3321 31.8823 17.6702C32.2369 18.0083 32.4159 18.4507 32.4192 18.9976C32.4159 19.4782 32.275 19.9024 31.9966 20.2703C31.7215 20.6349 31.3387 20.92 30.8482 21.1255C30.3577 21.3309 29.7942 21.4337 29.1578 21.4337C28.2232 21.4337 27.4708 21.2381 26.9007 20.847C26.3307 20.4526 25.9909 19.9041 25.8816 19.2014L27.6365 19.0324C27.7161 19.3771 27.8851 19.6373 28.1436 19.813C28.4022 19.9886 28.7386 20.0764 29.1529 20.0764C29.5804 20.0764 29.9235 19.9886 30.182 19.813C30.4438 19.6373 30.5748 19.4202 30.5748 19.1617C30.5748 18.9429 30.4902 18.7623 30.3212 18.6198C30.1555 18.4773 29.897 18.3679 29.5456 18.2916L28.2431 18.0182C27.5106 17.8657 26.9687 17.6089 26.6174 17.2476C26.266 16.883 26.092 16.4223 26.0953 15.8655C26.092 15.3949 26.2196 14.9872 26.4782 14.6425C26.74 14.2945 27.1029 14.026 27.5669 13.8371C28.0343 13.6449 28.5729 13.5488 29.1827 13.5488C30.0776 13.5488 30.7819 13.7393 31.2956 14.1205C31.8127 14.5016 32.1325 15.017 32.2551 15.6666ZM37.7164 13.6482V15.0402H33.3265V13.6482H37.7164ZM34.4103 11.8186H36.21V18.9877C36.21 19.2296 36.2465 19.4152 36.3194 19.5445C36.3957 19.6704 36.4951 19.7566 36.6177 19.803C36.7404 19.8494 36.8762 19.8726 37.0254 19.8726C37.1381 19.8726 37.2408 19.8643 37.3336 19.8478C37.4297 19.8312 37.5027 19.8163 37.5524 19.803L37.8556 21.21C37.7595 21.2431 37.622 21.2796 37.443 21.3193C37.2673 21.3591 37.0519 21.3823 36.7967 21.3889C36.3459 21.4022 35.9399 21.3343 35.5787 21.1851C35.2174 21.0327 34.9307 20.7973 34.7186 20.4791C34.5098 20.161 34.407 19.7632 34.4103 19.286V11.8186ZM40.3402 24.1482C40.0949 24.1482 39.8679 24.1283 39.6591 24.0885C39.4536 24.0521 39.2895 24.009 39.1669 23.9593L39.5845 22.5573C39.8464 22.6335 40.08 22.67 40.2855 22.6666C40.491 22.6633 40.6716 22.5987 40.8274 22.4728C40.9865 22.3501 41.1207 22.1446 41.2301 21.8563L41.3842 21.4436L38.6151 13.6482H40.5241L42.2841 19.4152H42.3636L44.1286 13.6482H46.0426L42.9851 22.2093C42.8426 22.6136 42.6536 22.96 42.4183 23.2483C42.183 23.54 41.8946 23.7621 41.5533 23.9145C41.2152 24.0703 40.8108 24.1482 40.3402 24.1482Z"
+                              fill="white"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_1141_13158" x1="-18.8155" y1="0.284548" x2="62.3698"
+                                            y2="24.4104" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.0221541" stop-color="#410000"/>
+                                <stop offset="0.339632" stop-color="#FA1300"/>
+                                <stop offset="0.887088" stop-color="#FF9243"/>
+                                <stop offset="1" stop-color="#FF8C6A"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <h4>iPhone 12</h4>
+                <button class="btn_your_device_card" type="button">
+                    <h5>Подробнее</h5>
+                </button>
+            </div>
+            <div class="your_device_card">
+                <img src="../../images/lk_iPhone.png" alt="iPhone">
+                <h4>iPhone 12</h4>
+                <button class="btn_your_device_card" type="button">
+                    <h5>Подробнее</h5>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="repair_price wrapper">
+        <h2>Специальные предложения для вас</h2>
+        <div class="carousel_items_repair_price">
+            <div class="carousel_items_repair_price_block1">
+                <form class="form" name="txt">
+                    <div class="carousel_item_repair_price">
+                        <input type="radio" name="txt" id="txt1">
+                        <label class="label_r" for="txt1">
+                            <div class="mobile_service">
+                                <div class="white_back">
+                                    <h6>Гарантия: 1 год</h6>
+                                </div>
+                                <div class="white_back">
+                                    <h6>Ремонт от 30 мин</h6>
+                                </div>
+                            </div>
+                            <div class="glass_price">
+                                <h4>Замена стекла дисплейного модуля</h4>
+                                <div class="price_repair_price">
+                                    <h4 class="crossed_price">190 руб.</h4>
+                                    <h4>190 руб.</h4>
+                                </div>
+                            </div>
+                            <button class="btn_select_list" type="submit"><h5>Заказать ремонт</h5></button>
+                            <button class="btn_select_list_checked" type="submit"><h5>Перейти в корзину</h5>
+                            </button>
+                        </label>
+                    </div>
+                    <div class="carousel_item_repair_price">
+                        <input type="radio" name="txt" id="txt2" checked>
+                        <label class="label_r" for="txt2">
+                            <div class="mobile_service">
+                                <div class="white_back">
+                                    <h6>Гарантия: 1 год</h6>
+                                </div>
+                                <div class="white_back">
+                                    <h6>Ремонт от 30 мин</h6>
+                                </div>
+                            </div>
+                            <div class="glass_price">
+                                <h4>Замена стекла дисплейного модуля</h4>
+                                <div class="price_repair_price">
+                                    <h4 class="crossed_price">190 руб.</h4>
+                                    <h4>190 руб.</h4>
+                                </div>
+                            </div>
+                            <button class="btn_select_list" type="submit"><h5>Заказать ремонт</h5></button>
+                            <button class="btn_select_list_checked" type="submit"><h5>Перейти в корзину</h5>
+                            </button>
+                        </label>
+                    </div>
+                    <div class="carousel_item_repair_price">
+                        <input type="radio" name="txt" id="txt3">
+                        <label class="label_r" for="txt3">
+                            <div class="mobile_service">
+                                <div class="white_back">
+                                    <h6>Гарантия: 1 год</h6>
+                                </div>
+                                <div class="white_back">
+                                    <h6>Ремонт от 30 мин</h6>
+                                </div>
+                            </div>
+                            <div class="glass_price">
+                                <h4>Замена стекла дисплейного модуля</h4>
+                                <div class="price_repair_price">
+                                    <h4 class="crossed_price">190 руб.</h4>
+                                    <h4>190 руб.</h4>
+                                </div>
+                            </div>
+                            <button class="btn_select_list" type="submit"><h5>Заказать ремонт</h5></button>
+                            <button class="btn_select_list_checked" type="submit"><h5>Перейти в корзину</h5>
+                            </button>
+                        </label>
+                    </div>
+                    <div class="carousel_item_repair_price">
+                        <input type="radio" name="txt" id="txt4">
+                        <label class="label_r" for="txt4">
+                            <div class="mobile_service">
+                                <div class="white_back">
+                                    <h6>Гарантия: 1 год</h6>
+                                </div>
+                                <div class="white_back">
+                                    <h6>Ремонт от 30 мин</h6>
+                                </div>
+                            </div>
+                            <div class="glass_price">
+                                <h4>Замена стекла дисплейного модуля</h4>
+                                <div class="price_repair_price">
+                                    <h4 class="crossed_price">190 руб.</h4>
+                                    <h4>190 руб.</h4>
+                                </div>
+                            </div>
+                            <button class="btn_select_list" type="submit"><h5>Заказать ремонт</h5></button>
+                            <button class="btn_select_list_checked" type="submit"><h5>Перейти в корзину</h5>
+                            </button>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="carousel_items_repair_price_block2">
+                <form class="form" name="txt">
+                    <div class="carousel_item_repair_price">
+                        <input type="radio" name="txt" id="txt5">
+                        <label class="label_r" for="txt5">
+                            <div class="mobile_service">
+                                <div class="white_back">
+                                    <h6>Гарантия: 1 год</h6>
+                                </div>
+                                <div class="white_back">
+                                    <h6>Ремонт от 30 мин</h6>
+                                </div>
+                            </div>
+                            <div class="glass_price">
+                                <h4>Замена стекла дисплейного модуля</h4>
+                                <div class="price_repair_price">
+                                    <h4 class="crossed_price">190 руб.</h4>
+                                    <h4>190 руб.</h4>
+                                </div>
+                            </div>
+                            <button class="btn_select_list" type="submit"><h5>Заказать ремонт</h5></button>
+                            <button class="btn_select_list_checked" type="submit"><h5>Перейти в корзину</h5>
+                            </button>
+                        </label>
+                    </div>
+                    <div class="carousel_item_repair_price">
+                        <input type="radio" name="txt" id="txt6" checked>
+                        <label class="label_r" for="txt6">
+                            <div class="mobile_service">
+                                <div class="white_back">
+                                    <h6>Гарантия: 1 год</h6>
+                                </div>
+                                <div class="white_back">
+                                    <h6>Ремонт от 30 мин</h6>
+                                </div>
+                            </div>
+                            <div class="glass_price">
+                                <h4>Замена стекла дисплейного модуля</h4>
+                                <div class="price_repair_price">
+                                    <h4 class="crossed_price">190 руб.</h4>
+                                    <h4>190 руб.</h4>
+                                </div>
+                            </div>
+                            <button class="btn_select_list" type="submit"><h5>Заказать ремонт</h5></button>
+                            <button class="btn_select_list_checked" type="submit"><h5>Перейти в корзину</h5>
+                            </button>
+                        </label>
+                    </div>
+                    <div class="carousel_item_repair_price">
+                        <input type="radio" name="txt" id="txt7">
+                        <label class="label_r" for="txt7">
+                            <div class="mobile_service">
+                                <div class="white_back">
+                                    <h6>Гарантия: 1 год</h6>
+                                </div>
+                                <div class="white_back">
+                                    <h6>Ремонт от 30 мин</h6>
+                                </div>
+                            </div>
+                            <div class="glass_price">
+                                <h4>Замена стекла дисплейного модуля</h4>
+                                <div class="price_repair_price">
+                                    <h4 class="crossed_price">190 руб.</h4>
+                                    <h4>190 руб.</h4>
+                                </div>
+                            </div>
+                            <button class="btn_select_list" type="submit"><h5>Заказать ремонт</h5></button>
+                            <button class="btn_select_list_checked" type="submit"><h5>Перейти в корзину</h5>
+                            </button>
+                        </label>
+                    </div>
+                    <div class="carousel_item_repair_price">
+                        <input type="radio" name="txt" id="txt8">
+                        <label class="label_r" for="txt8">
+                            <div class="mobile_service">
+                                <div class="white_back">
+                                    <h6>Гарантия: 1 год</h6>
+                                </div>
+                                <div class="white_back">
+                                    <h6>Ремонт от 30 мин</h6>
+                                </div>
+                            </div>
+                            <div class="glass_price">
+                                <h4>Замена стекла дисплейного модуля</h4>
+                                <div class="price_repair_price">
+                                    <h4 class="crossed_price">190 руб.</h4>
+                                    <h4>190 руб.</h4>
+                                </div>
+                            </div>
+                            <button class="btn_select_list" type="submit"><h5>Заказать ремонт</h5></button>
+                            <button class="btn_select_list_checked" type="submit"><h5>Перейти в корзину</h5>
+                            </button>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="accessories"></div>
+</main>
+<footer id="footer"></footer>
+<script src="../../script.js"></script>
+</body>
+</html>

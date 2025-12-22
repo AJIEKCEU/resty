@@ -1,0 +1,383 @@
+/*-------------------upd_service----------------------*/
+.service_switcher {
+    padding-bottom: 16px;
+}
+.service_switcher .switcher {
+    width: 100%;
+    background: var(--main-color-Grey1);
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    border-radius: 20px;
+    max-width: 672px;
+}
+.service_switcher .switcher span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+    min-height: 48px;
+    border-radius: 16px;
+    background: var(--main-color-Grey1);
+    cursor: pointer;
+    transition: 0.2s;
+    color: var(--main-color-Black);
+}
+.service_switcher .switcher span:hover {
+    background: var(--main-color-Grey1-hover);
+}
+.service_switcher .switcher span.active {
+    color: var(--main-color-White);
+    background: var(--Brand-Gradient);
+}
+.service_switcher .switcher span.active:hover {
+    background: var(--Brand-Gradient-Hover);
+}
+
+.upd_service .device_type {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow: hidden;
+}
+.upd_service .service_caption {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+}
+.upd_service .service_caption2 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+}
+.upd_service .device_type .type_device.wrap {
+    padding: 0;
+}
+.service-catalog__item {
+    width: 140px;
+}
+.service-catalog__item-body {
+    display: grid;
+
+    grid-row-gap: 12px;
+    text-align: center;
+}
+.service-catalog__item input[type="radio"] {
+    display: none;
+}
+.service-catalog__item label {
+    display: block;
+    background: var(--main-color-Grey1);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 3px solid var(--main-color-Grey1);
+    cursor: pointer;
+}
+.service-catalog__item input[type=radio]:checked + label {
+    padding: 0;
+    border: 3px solid transparent;
+    background: linear-gradient(var(--main-color-Grey1), var(--main-color-Grey1)) content-box, var(--Brand-Gradient) border-box;
+}
+.service-catalog__item label img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.upd_service .device_year {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.upd_service .device_year .carousel_form .carousel_inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 8px;
+}
+.upd_service .device_year .carousel_form .carousel_inner .carousel_item_device_year input[type="radio"] {
+    display: none;
+}
+.upd_service .device_year .carousel_form .carousel_inner .carousel_item_device_year label {
+    width: 100%;
+    min-height: 50px;
+    display: inline-block;
+    padding: 2px;
+    background-color: var(--main-color-Grey1);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--main-color-Grey2);
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+.upd_service .device_year .carousel_form .carousel_inner .carousel_item_device_year label:hover {
+    background-color: var(--main-color-Grey1-hover);
+}
+.upd_service .device_year .carousel_form .carousel_inner .carousel_item_device_year label h5 {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: 13px;
+    text-align: center;
+    background: var(--main-color-Grey1);
+    transition: background-color 0.2s;
+}
+.upd_service .device_year .carousel_form .carousel_inner .carousel_item_device_year label:hover h5 {
+    background-color: var(--main-color-Grey1-hover);
+}
+.upd_service .device_year .carousel_form .carousel_inner .carousel_item_device_year input[type=radio]:checked + label {
+    padding: 0;
+    border: 3px solid transparent;
+    background: linear-gradient(var(--main-color-Grey1), var(--main-color-Grey1)) content-box, var(--Brand-Gradient) border-box;
+}
+.upd_service .device_year .carousel_form .carousel_inner .carousel_item_device_year label h5 {
+    padding: 11px;
+}
+
+
+.upd_service .device_problem {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.upd_service .device_problem .carousel_form .carousel_inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+}
+.upd_service .device_problem .carousel_form .carousel_inner .carousel_item_device_problem input[type="radio"] {
+    display: none;
+}
+.upd_service .device_problem .carousel_form .carousel_inner .carousel_item_device_problem label {
+    width: 100%;
+    height: 100%;
+    min-height: 92px;
+    display: block;
+    padding: 2px;
+    background-color: var(--main-color-Grey1);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--main-color-Grey2);
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+.upd_service .device_problem .carousel_form .carousel_inner .carousel_item_device_problem label:hover {
+    background-color: var(--main-color-Grey1-hover);
+}
+.upd_service .device_problem .carousel_form .carousel_inner .carousel_item_device_problem label .in {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    padding: 13px;
+    text-align: center;
+    background: var(--main-color-Grey1);
+    transition: background-color 0.2s;
+}
+.upd_service .device_problem .carousel_form .carousel_inner .carousel_item_device_problem label:hover .in {
+    background-color: var(--main-color-Grey1-hover);
+}
+.upd_service .device_problem .carousel_form .carousel_inner .carousel_item_device_problem input[type=radio]:checked + label {
+    padding: 0;
+    border: 3px solid transparent;
+    background: linear-gradient(var(--main-color-Grey1), var(--main-color-Grey1)) content-box, var(--Brand-Gradient) border-box;
+}
+.upd_service .device_problem .carousel_form .carousel_inner .carousel_item_device_problem label .in {
+    padding: 11px;
+}
+.upd_service .device_problem .carousel_form .carousel_inner .carousel_item_device_problem label .in .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upd_service .device_problem .carousel_form .carousel_inner .carousel_item_device_problem label .in .img img {
+    display: block;
+}
+.upd_service .device_problem .carousel_form .carousel_inner .carousel_item_device_problem label .in .desc {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+.upd_service .device_problem .carousel_form .carousel_inner .carousel_item_device_problem label .in .desc p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+
+.upd_service .repair_price {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.upd_service .repair_price .carousel_items_repair_price_block_main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap: 16px;
+}
+.carousel_item_repair_price_block {
+    background-color: var(--main-color-Grey1);
+    border-radius: 24px;
+    padding: 16px;
+    max-width: 694px;
+}
+.carousel_item_repair_price_block .carousel_item_repair_price input {
+    display: none;
+}
+.carousel_item_repair_price_block .carousel_item_repair_price .label_r {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.carousel_item_repair_price_block .carousel_item_repair_price .label_r .repair_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-color-White);
+}
+.carousel_item_repair_price_block .carousel_item_repair_price .label_r .mobile_service {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-left: 86px;
+    min-height: 70px;
+}
+.carousel_item_repair_price_block .carousel_item_repair_price .label_r .mobile_service h5 {
+    background: var(--main-color-White);
+    border-radius: 12px;
+    padding: 4px 8px;
+}
+.carousel_item_repair_price_block .carousel_item_repair_price .label_r .glass_price {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.carousel_item_repair_price_block .carousel_item_repair_price .label_r .glass_price .price_repair_price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.carousel_item_repair_price_block .carousel_item_repair_price .label_r .glass_price .price_repair_price .crossed_price {
+    text-decoration: line-through;
+}
+.service-catalog,
+.service-catalog-model {
+    --swiper-crollbar-margin-top: 20px;
+}
+@media only screen and (min-width:768px) {
+    .service_switcher {
+        padding-bottom: 48px;
+    }
+    .service_switcher .switcher {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .upd_service .device_type {
+        gap: 24px;
+    }
+    .upd_service .service_caption {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .upd_service .select_device_type.wrap {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .upd_service .service_caption2 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .upd_service .device_type .type_device {
+        overflow-x: unset;
+    }
+    .upd_service .device_type .type_device.wrap {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .upd_service .device_year {
+        padding-top: 32px;
+        padding-bottom: 0;
+    }
+
+    .upd_service .device_problem {
+        padding-top: 64px;
+        padding-bottom: 32px;
+    }
+    .upd_service .repair_price {
+        padding-top: 64px;
+        padding-bottom: 32px;
+    }
+
+
+    .upd_service .repair_price .carousel_items_repair_price_block_main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(600px, 1fr));
+        gap: 32px 20px;
+    }
+    .carousel_item_repair_price_block {
+        padding: 32px;
+    }
+    .carousel_item_repair_price_block .carousel_item_repair_price {
+        height: 100%;
+    }
+    .carousel_item_repair_price_block .carousel_item_repair_price .label_r {
+        justify-content: space-between;
+        height: 100%;
+        gap: 20px;
+        padding-left: 212px;
+    }
+    .carousel_item_repair_price_block .carousel_item_repair_price .label_r .repair_img {
+        width: 180px;
+        height: 100%;
+    }
+    .carousel_item_repair_price_block .carousel_item_repair_price .label_r .repair_img img {
+        width: 48px;
+    }
+    .carousel_item_repair_price_block .carousel_item_repair_price .label_r .mobile_service {
+        padding-left: 0;
+        min-height: unset;
+    }
+}
+@media (min-width:1200px) {
+    .service-catalog__body {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(140px,1fr));
+        grid-gap: 18px;
+    }
+    .service-catalog__item {
+        width: initial;
+    }
+    .upd_service .select_device_type.wrap {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+    .upd_service .device_type .type_device.wrap {
+        padding-left: 48px;
+        padding-right: 48px;
+        margin: 0 auto;
+        max-width: 1504px;
+        width: 100%;
+    }
+}
+/*-------------------upd_service end----------------------*/
+
+

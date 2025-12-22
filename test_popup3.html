@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/service.css">
+    <link rel="stylesheet" href="css/upd/style_catalog.css">
+    <link rel="stylesheet" href="css/upd/style_popup.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-latest.min.js"></script> -->
+    <title>Каталог</title>
+</head>
+<body>
+
+
+
+
+
+<h2>1st Modal</h2>
+
+<!-- Trigger/Open The Modal -->
+<button class="modal_button" data-id="popup_callback">Open Modal</button>
+
+<h2>2nd Modal</h2>
+
+<!-- Trigger/Open The Modal -->
+<button class="modal_button" data-id="popup_repair">Open Modal</button>
+
+
+<div id="popup_callback" class="modal modal_form">
+    <!-- Modal content -->
+    <div class="modal_content">
+        <div class="form_head h5">Заказать звонок</div>
+        <p>Оставьте ваш номер телефона и наш менеджер перезвонит вам.</p>
+        <div class="form_body">
+            <form>
+                <div class="item">
+                    <label for="first_name" class="h6">Имя</label>
+                    <input type="text" name="first_name" id="first_name">
+                </div>
+                <div class="item">
+                    <label for="phone" class="h6">Телефон</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+                <div class="btn">
+                    <button type="submit">Заказать звонок</button>
+                </div>
+            </form>
+            <span class="form_close modal_close"></span>
+        </div>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="popup_repair" class="modal modal_form">
+    <!-- Modal content -->
+    <div class="modal_content">
+        <div class="form_head h5">Введите ваши контактные данные и мы свяжемся с вами</div>
+        <div class="form_body">
+            <form>
+                <div class="item">
+                    <label for="first_name" class="h6">Имя</label>
+                    <input type="text" name="first_name" id="first_name">
+                </div>
+                <div class="item">
+                    <label for="last_name" class="h6">Фамилия</label>
+                    <input type="text" name="last_name" id="last_name">
+                </div>
+                <div class="item">
+                    <label for="phone" class="h6">Телефон</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+                <div class="btn">
+                    <button type="submit">Заказать ремонт</button>
+                </div>
+            </form>
+            <span class="form_close modal_close"></span>
+        </div>
+    </div>
+</div>
+
+
+<script>
+// Get the button that opens the modal
+var btn = document.querySelectorAll(".modal_button");
+
+// All page modals
+var modals = document.querySelectorAll('.modal_form');
+
+// Get the <span> element that closes the modal
+var spans = document.getElementsByClassName("modal_close");
+console.log(btn);
+    console.log(modals);
+    console.log(spans);
+// When the user clicks the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+btn[i].onclick = function(e) {
+    e.preventDefault();
+    document.body.classList.add("no_scroll");
+    modal = document.querySelector("#"+e.target.getAttribute("data-id"));
+    modal.style.display = "flex";
+}
+}
+
+// When the user clicks on <span> (x), close the modal
+for (var i = 0; i < spans.length; i++) {
+spans[i].onclick = function() {
+    for (var index in modals) {
+    if (typeof modals[index].style !== 'undefined') {
+        modals[index].style.display = "none";
+        document.body.classList.remove("no_scroll"); 
+    }  
+    }
+}
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal_form')) {
+    for (var index in modals) {
+    if (typeof modals[index].style !== 'undefined') {
+        modals[index].style.display = "none";
+        document.body.classList.remove("no_scroll"); 
+    }   
+    }
+    }
+}
+</script>
+
+</body>
+</html>

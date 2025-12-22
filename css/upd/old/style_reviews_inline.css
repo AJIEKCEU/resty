@@ -1,0 +1,37 @@
+/*-------------------reviews_inline----------------------*/
+.reviews_inline {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.reviews_inline .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.reviews_inline .head .reviews_inline_arrows {
+    display: flex;
+    gap: 12px;
+}
+.reviews_inline .body .reviews_inline_swiper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.reviews_inline_swiper .swiper-slide {
+    height: auto;
+}
+
+@media only screen and (min-width:768px) {
+    .reviews_inline {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        gap: 32px;
+    }
+    .reviews_inline .body .reviews_inline_swiper .swiper-wrapper {
+        align-items: stretch;
+    }
+}
+/*-------------------reviews_inline end----------------------*/

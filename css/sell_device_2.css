@@ -1,0 +1,82 @@
+.selected_sell_devices {
+    display: flex;
+    column-gap: 20px;
+}
+
+.select_sell_device {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    background: var(--main-color-Grey1);
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+
+    img {
+        max-width: 140px;
+        width: 100%;
+    }
+}
+
+.select_sell_device_text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    align-items: center;
+}
+
+.text_sm {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.btn_select_sell_device, .btn_add_sell_device {
+    width: 100%;
+    padding: 12px 19px;
+    background: var(--Brand-Gradient);
+    color: var(--main-color-White);
+    border: none;
+    border-radius: 16px;
+}
+
+.select_sell_device, .add_device {
+    width: 100%;
+    max-width: 307px;
+}
+
+.add_sell_device {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    background: var(--main-color-Grey1);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 24px;
+}
+
+.add_sell_device_text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .selected_sell_devices {
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+    }
+
+    .select_sell_device,
+    .add_sell_device {
+        max-width: 450px;
+    }
+
+    .add_sell_device {
+        height: 176px;
+        width: 100%;
+        align-items: flex-start;
+    }
+}

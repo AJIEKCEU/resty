@@ -1,0 +1,135 @@
+.banner {
+    background-image: url("../images/main_slider.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 450px;
+
+    .wrapper {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.banner_text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    justify-content: center;
+}
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 8px;
+}
+
+.btn_banner {
+    max-width: max-content;
+    background: var(--main-color-White);
+    color: var(--main-color-Black);
+    border-radius: 16px;
+    border: none;
+    padding: 12px 24px;
+}
+
+.carousel {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    justify-content: center;
+
+    .wrapper {
+        max-width: 1420px;
+        margin: 0;
+    }
+}
+
+.btn_left, .btn_right {
+    background: var(--main-color-Grey1);
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.carousel_item {
+    height: 182px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.carousel_item  img {
+    width: 140px;
+    height: 140px;
+}
+
+
+
+.carousel_name_phone {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1600px) {
+    .carousel_item:nth-child(n+8) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .carousel_item:nth-child(n+5) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .btn_left, .btn_right {
+        display: none;
+    }
+
+    .carousel_item  img {
+        height: 170px;
+        width: 170px;
+    }
+
+    .carousel_item:nth-child(n+4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .banner.wrapper {
+        padding: 0 16px;
+    }
+
+    .banner {
+        height: 298px;
+    }
+
+    .banner_text {
+        margin-top: 40px;
+    }
+
+
+    .carousel_item:nth-child(n+3) {
+        display: none;
+    }
+}

@@ -1,0 +1,107 @@
+/*-------------------about----------------------*/
+.about {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about h2 span {
+    background: var(--Brand-Gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.about .left .desc ul {
+    padding-left: 24px;
+}
+.about .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.about .right .video {
+    width: 100%;
+    max-width: 640px;
+    position: relative;
+    padding-top: 78%;
+    border-radius: 24px;
+    overflow: hidden;
+    background: var(--main-color-Grey1);
+    display: flex;
+    justify-content: center;
+}
+.about .right .video .yvideo,
+.about .right .video .screen_saver {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.about .right .video .screen_saver {
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.about .right .video .screen_saver::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(0deg, rgba(245, 245, 245, 0.7), rgba(245, 245, 245, 0.7));
+    border-radius: inherit;
+}
+.about .right .video .screen_saver span {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding-left: 30px;
+    background: var(--main-color-White) url(../../icons/icon_play.svg) no-repeat 57% 50%;
+    z-index: 2;
+}
+.about .right .video video {
+    object-fit: contain;
+    max-height: 100%;
+    /* max-width: 100%; */
+    margin: 0 auto;
+}
+.about .right .video video.hide {
+    display: none;
+}
+.about .right .video_desc {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+@media only screen and (min-width:768px) {
+    .about {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    .about .left {
+        gap: 32px;
+    }
+}
+@media only screen and (min-width:1000px) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 128px;
+    }
+}
+/*-------------------about end----------------------*/
