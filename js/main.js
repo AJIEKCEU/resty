@@ -64,7 +64,6 @@ function btn_fixed() {
 
 function update_cart_items_init()
 {
-    console.log('update_cart_items_init');
     clearTimeout(cart_timer);
     cart_timer = setTimeout(function(){update_cart_items();}, 100);
 }
@@ -101,7 +100,6 @@ function init_cart()
 {
     modal_button();
     btn_fixed();
-    console.log('init_cart start');
     $('.upd_cart_page .head_page').show();
     $('.upd_cart_page .cart_main').show();
     $('.upd_cart_page .cart_form').hide();
@@ -1496,7 +1494,6 @@ jQuery(document).ready(function ($)
             }
             $(this).toggleClass("open");
 
-            console.log(type_list_open_arr);
             set_cookie('type_list_open_arr', JSON.stringify(type_list_open_arr));
         });
     }
@@ -1533,25 +1530,29 @@ function serviceCatalogSliderOptions(scrollbar) {
 }
 let serviceCatalogSlider, serviceCatalogModelSlider;
 function initServiceSwiper(e) {
-    if (e.matches) {
-        serviceCatalogSlider = new Swiper(".service-catalog", serviceCatalogSliderOptions(document.querySelector('.service-catalog__scrollbar')));
+    if($('.service-catalog').length) {
+        if (e.matches) {
+            serviceCatalogSlider = new Swiper(".service-catalog", serviceCatalogSliderOptions(document.querySelector('.service-catalog__scrollbar')));
 
-    } else {
-        if (serviceCatalogSlider) {
-            serviceCatalogSlider.destroy();
-            serviceCatalogSlider = null; // Обнуляем
+        } else {
+            if (serviceCatalogSlider) {
+                serviceCatalogSlider.destroy();
+                serviceCatalogSlider = null; // Обнуляем
+            }
         }
     }
 }
 
 function initServiceModelSwiper(e) {
-    if (e.matches) {
-        serviceCatalogModelSlider = new Swiper(".service-catalog-model", serviceCatalogSliderOptions(document.querySelector('.service-catalog-model__scrollbar')));
+    if($('.service-catalog-model').length) {
+        if (e.matches) {
+            serviceCatalogModelSlider = new Swiper(".service-catalog-model", serviceCatalogSliderOptions(document.querySelector('.service-catalog-model__scrollbar')));
 
-    } else {
-        if(serviceCatalogModelSlider) {
-            serviceCatalogModelSlider.destroy();
-            serviceCatalogModelSlider = null; // Обнуляем
+        } else {
+            if (serviceCatalogModelSlider) {
+                serviceCatalogModelSlider.destroy();
+                serviceCatalogModelSlider = null; // Обнуляем
+            }
         }
     }
 }

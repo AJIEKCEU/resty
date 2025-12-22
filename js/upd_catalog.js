@@ -5,7 +5,6 @@ function update_product_more_items()
         $(".product_more_items").unbind("click");
         $(".product_more_items").on("click", function()
         {
-            console.log('product_more_items php');
             var next_page = $(this).data('page');
             $("#product_page_"+next_page).show();
             $(".more_items_"+next_page).show();
@@ -104,7 +103,6 @@ jQuery(document).ready(function ($)
         $(".filter_item .filter_item_body .item label").each(function() {
             if ($(this).text() == $tmp_this) {
                 $count1++;
-                console.log($count1);
             };
         });
     });
@@ -140,8 +138,6 @@ jQuery(document).ready(function ($)
 
 
     /*Показать скрыть смартфильтр*/
-    let filter = $('.js-smart-filter'),
-        shadowFilter = $('.js-smart-filter-shadow');
     function showHideFilter (){
         $('.js-smart-filter').toggleClass('js-smart-filter--is-show');
         $('.js-smart-filter-shadow').toggleClass('js-smart-filter-shadow--is-active');
