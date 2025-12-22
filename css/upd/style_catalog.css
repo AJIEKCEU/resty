@@ -184,19 +184,20 @@
 }
 .upd_catalog .upd_catalog_body .wrap_filter .filter_body .filter_item .filter_item_body .type_list .item_btn .filter_more > div {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 .upd_catalog .upd_catalog_body .wrap_filter .filter_body .filter_item .filter_item_body .type_list .item_btn .filter_more > div::before {
-    position: absolute;
     content: "";
     width: 24px;
     height: 24px;
     background: url(../../icons/chevron-down.svg) no-repeat;
     background-size: contain;
-    top: 0;
-    left: -40px;
+    margin-right: 8px;
 }
 .upd_catalog .upd_catalog_body .wrap_filter .filter_body .filter_item .filter_item_body .type_list .item_btn .filter_more.open > div::before {
-    transform: scale(-1,-1);
+    transform: rotate(180deg);
+    margin-right: 8px;
 }
 .upd_catalog .upd_catalog_body .wrap_filter .filter_body .filter_item .filter_item_body .type_list .item_btn .filter_more > div .roll_up {
     display: none;
