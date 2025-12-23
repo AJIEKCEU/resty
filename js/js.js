@@ -3,7 +3,6 @@ var isb = 0;
 
 function isb_update()
 {
-    console.log('isb_update');
     $(document).on("scroll", function()
     {
         isb++;
