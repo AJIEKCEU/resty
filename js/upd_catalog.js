@@ -18,55 +18,48 @@ setInterval(function()
     update_product_more_items();
 }, 1000);
 
+const upCatalog = $('.upd_catalog');
 
-
-function upd_catalog()
+jQuery(document).ready(function ($)
 {
-    // modal_button();
-
-    //Показ фильтра
-    $(window).resize(function()
-    {
-        $tmp_width = $(window).width();
-    });
 
     //Состояния input
-    $( ".type_price_item input" ).focus(function(){
+    upCatalog.on('focus.inputState', '.type_price_item input', function() {
         $(this).parent().addClass("on");
     });
-    $( ".type_price_item input" ).blur(function(){
+
+    upCatalog.on('blur.inputState', '.type_price_item input', function() {
         if (!$(this).val()) {
             $(this).parent().removeClass("on");
-        };
+        }
     });
 
     //Очистка значения input
-    $( ".type_price_item input" ).focus(function(){
+    upCatalog.on('focus.inputCross', '.type_price_item input', function() {
         $(this).parent().addClass('cross');
     });
-    $( ".type_price_item input" ).blur(function(){
+
+    upCatalog.on('blur.inputCross', '.type_price_item input', function() {
         if (!$(this).val()) {
             $(this).parent().removeClass('cross');
         }
     });
-    $( ".type_price_item span" ).click(function(){
+
+    upCatalog.on('click.inputClear', '.type_price_item span', function() {
         $(this).next('input').val('');
         $(this).parent().removeClass('cross');
     });
 
-    $('.screen_saver').unbind('click');
-    $('.screen_saver').click(function(){
-        $(this).hide();
-        $(this).parent().find('video').removeClass('hide');
-        $(this).parent().find('video').get(0).play();
+
+    upCatalog.on('click.screenSaverToggle', '.screen_saver', function() {
+        const $this = $(this); // Кэшируем $(this) для лучшей производительности
+        const $parent = $this.parent(); // Кэшируем родителя
+
+        $this.hide(); // Скрыть сам заглушку
+        const $video = $parent.find('video');
+        $video.removeClass('hide'); // Показать видео
+        $video.get(0).play(); // Запустить видео (получаем нативный DOM элемент)
     });
-}
-
-jQuery(document).ready(function ($)
-{
-    upd_catalog();
-
-    let upCatalog = $('.upd_catalog');
 
    /* //Добавить параметр фильтра
     upCatalog.on('click','.filter_item .filter_item_body .item label', function()
@@ -95,7 +88,7 @@ jQuery(document).ready(function ($)
     });*/
 
     //Удалить параметр фильтра
-    upCatalog.on('click','.selected_param .wrap_items span', function()
+   /* upCatalog.on('click','.selected_param .wrap_items span', function()
     {
         $(this).remove();
         $tmp_this = $(this).text();
@@ -105,7 +98,7 @@ jQuery(document).ready(function ($)
                 $count1++;
             };
         });
-    });
+    });*/
 
     //Кнопка сортировки
     upCatalog.on('click','.btn_sort', function()
@@ -138,25 +131,43 @@ jQuery(document).ready(function ($)
 
 
     /*Показать скрыть смартфильтр*/
-    function showHideFilter (){
+    function handleFilterState(event) {
+        const isMobile = event.matches; // true, если '(max-width: 999px)' соответствует
+
+        upCatalog.off('click.filterToggle', '.btn_filter');
+
+        if (isMobile) {
+            $('.filter_body').css('display', 'none');
+            $('.filter_head').removeClass('show');
+
+            upCatalog.on('click.filterToggle', '.btn_filter', function() {
+                if ($('.filter_body').css('display') === 'none') {
+                    $('.filter_body').css('display', 'block');
+                    $('.filter_head').addClass('show');
+                } else {
+                    $('.filter_body').css('display', 'none');
+                    $('.filter_head').removeClass('show');
+                }
+            });
+        } else {
+            $('.filter_body').css('display', 'block');
+            $('.filter_head').addClass('show');
+        }
+    }
+
+    const mobileMediaQuery = window.matchMedia('(max-width: 999px)');
+    handleFilterState(mobileMediaQuery);
+    mobileMediaQuery.addEventListener('change', handleFilterState);
+    /*function showHideFilter (){
         $('.js-smart-filter').toggleClass('js-smart-filter--is-show');
         $('.js-smart-filter-shadow').toggleClass('js-smart-filter-shadow--is-active');
-        /*if(filter.hasClass('smart-filter_show')){
-            scrollLock.disablePageScroll(vaObj.filterScrollable);
-        }
-        else {
-            scrollLock.enablePageScroll(vaObj.filterScrollable);
-        }*/
     }
     upCatalog.on('click', '.js-smart-filter-button', function(){
         showHideFilter();
     });
     upCatalog.on('click', '.js-smart-filter-close', function(){
         showHideFilter();
-    });
-    upCatalog.on('click', '.js-smart-filter-shadow', function(e){
-        showHideFilter();
-    });
+    });*/
     /***************************************************/
 });
 
