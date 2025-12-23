@@ -38,10 +38,7 @@
 }
 .swiper-horizontal > .wrap_main_card_scrollbar {
     --swiper-scrollbar-sides-offset: 0;
-    --swiper-scrollbar-bottom: 0;
-    position: relative;
-    margin-top: 10px;
-    
+    --swiper-crollbar-margin-top: 20px;
 }
 @media only screen and (min-width:1200px) {
     .swiper-horizontal > .wrap_main_card_scrollbar {
