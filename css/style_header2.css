@@ -87,7 +87,7 @@ header .wrap_h_all .wrap_h_head .h_head_phone {
 header .h_head {
     transition: 0.2s;
 }
-header .h_head .h_head_info .schedule {
+.head-info-schedule-title {
     display: none;
 }
 .schedule-mobi {
@@ -450,8 +450,8 @@ header .wrap_h_all .wrap_h_body .h_body .h_system .cart .cart_items:empty {
         display: flex;
         gap: 24px;
     }
-    header .wrap_h_all .wrap_h_head .h_head_info .schedule {
-        display: block;
+    .head-info-schedule-title {
+        display: inline;
     }
     header .wrap_h_all .wrap_h_head .h_head_nets {
         width: 100%;

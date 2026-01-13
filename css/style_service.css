@@ -282,6 +282,39 @@
 .service-catalog-model {
     --swiper-crollbar-margin-top: 20px;
 }
+
+.show-more-btn {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .carousel_form.js-collapsed .carousel_item_device_year:nth-child(n+9) {
+        display: none;
+    }
+
+    /* Показываем кнопку только в состоянии 'collapsed' */
+    .carousel_form.js-collapsed .show-more-btn {
+        display: block;
+        width: 100%;
+        margin: 15px 0;
+        padding: 12px;
+        background-color: var(--main-color-Grey1);
+
+        border: 1px solid var(--main-color-Grey2);
+        border-radius: 16px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .carousel_form.is-expanded .carousel_item_device_year {
+        display: block !important;
+    }
+    .carousel_form.is-expanded .show-more-btn {
+        display: none !important;
+    }
+}
+
 @media only screen and (min-width:768px) {
     .service_switcher {
         padding-bottom: 48px;

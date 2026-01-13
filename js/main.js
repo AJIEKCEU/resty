@@ -1630,3 +1630,16 @@ jQuery(document).ready(function ($)
         });
     });
 });
+
+document.addEventListener('click', function (event) {
+    // Проверяем, что клик был именно по нашей кнопке
+    if (event.target && event.target.classList.contains('js-show-more')) {
+        // Находим ближайшую форму к этой кнопке
+        var form = event.target.closest('.carousel_form');
+
+        if (form) {
+            form.classList.add('is-expanded');
+            form.classList.remove('js-collapsed');
+        }
+    }
+});
