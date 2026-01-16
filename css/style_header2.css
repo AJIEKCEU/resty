@@ -424,7 +424,6 @@ header .wrap_h_all .wrap_h_body .h_body .h_system .cart .cart_items:empty {
     }
     header .wrap_h_all .wrap_h_head {
         background: var(--main-color-Grey1);
-        padding: 16px 0;
     }
     header .wrap_h_all .wrap_h_head .h_head {
         position: relative;
@@ -432,7 +431,7 @@ header .wrap_h_all .wrap_h_body .h_body .h_system .cart .cart_items:empty {
         background: none;
         height: unset;
 
-        padding: 0 48px;
+        padding: 16px 48px;
         margin: 0 auto;
         max-width: 1504px;
         display: flex;

@@ -321,7 +321,7 @@
 .upd_cart_page .cart_main .left .cart_items_list .cart_item .result > div .part_price {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 16px;
 }
 .upd_cart_page .cart_main .left .cart_items_list .cart_item .result > div .part_price .month {
     background: var(--main-color-White);

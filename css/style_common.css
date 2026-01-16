@@ -148,9 +148,15 @@ h6, .h6 {
     line-height: 24px;
     font-weight: 500;
 }
+.h5_semi {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
 .h6_semi {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 20px;
     font-weight: 600;
 }
 
