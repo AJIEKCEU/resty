@@ -1,8 +1,5 @@
 jQuery(document).ready(function ($) {
 
-    //Работа Fancybox
-    Fancybox.bind("[data-fancybox]");
-
     //Работа inline отзывов
     const reviews_inline_swiper = new Swiper('.reviews_inline_swiper', {
         slidesPerView: 1,

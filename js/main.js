@@ -613,7 +613,7 @@ jQuery(document).ready(function ($) {
     });
 
     //Звёзда для отзыва
-    $('.barrating').barrating();
+    /*$('.barrating').barrating();*/
 
 
     //Работа inline отзывов
