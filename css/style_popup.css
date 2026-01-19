@@ -794,3 +794,65 @@
 }
 
 /*-------------------добавление фото end----------------------*/
+.form-checkbox {
+    position: relative;
+}
+.form-checkbox__field {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-checkbox__label {
+    position: relative;
+    display: block;
+
+    cursor: pointer;
+}
+
+.form-checkbox--right .form-checkbox__label {
+    padding-right: 20px;
+}
+
+.form-checkbox--left .form-checkbox__label {
+    padding-left: 20px;
+}
+
+.form-checkbox--gray .form-checkbox__label {
+    padding: 16px 36px 16px 16px;
+    border-radius: 16px;
+    background-color: var(--main-color-Grey1);
+}
+
+.form-checkbox--right .form-checkbox__label::before {
+    right: 0;
+}
+
+.form-checkbox--left .form-checkbox__label::before,
+.form-checkbox--left .form-checkbox__field {
+    left: 0;
+}
+.form-checkbox--gray .form-checkbox__field,
+.form-checkbox--right .form-checkbox__field,
+.form-checkbox--gray .form-checkbox__label::before {
+    right: 16px;
+}
+
+.form-checkbox__label::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 1px solid #D0D5DD;
+    border-radius: 4px;
+}
+
+.form-checkbox__field:checked + .form-checkbox__label::before {
+    border-color: #B90D01;
+    background: #FD5925 center center / 12px 12px no-repeat url(../../icons/checkbox.svg);
+}

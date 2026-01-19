@@ -92,6 +92,14 @@ footer .wrap .foot {
     line-height: 20px;
     color: var(--main-color-Grey3);
 }
+
+.foot__links {
+    display: grid;
+    grid-row-gap: 20px;
+}
+.foot__links a {
+    margin-right: 20px;
+}
 @media only screen and (min-width:768px) {
     footer .wrap {
         padding-top: 64px;
@@ -128,6 +136,11 @@ footer .wrap .foot {
         grid-row-gap: 10px;
         padding-top: 24px;
         border-top: 1px solid var(--main-color-Grey2);
+    }
+
+    .foot__links {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 @media only screen and (min-width:1200px) {
