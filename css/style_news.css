@@ -1,6 +1,8 @@
 /*-------------------news_all----------------------*/
 .news_all .news_body {
     padding: 16px 0;
+}
+.news_all .news_body_list {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     gap: 16px;
@@ -68,6 +70,8 @@
 @media only screen and (min-width:768px) {
     .news_all .news_body {
         padding: 16px 0 64px;
+    }
+    .news_all .news_body_list {
         grid-template-columns: repeat(auto-fill,minmax(360px,1fr));
         gap: 20px;
     }

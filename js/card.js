@@ -15,8 +15,6 @@ function init_product()
         },
     });
 
-    Fancybox.bind("[data-fancybox]");
-
     const swiper_card = new Swiper('.swiper_card', {
         pagination: {
             el: '.swiper-card-pagination',

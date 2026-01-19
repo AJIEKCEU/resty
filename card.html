@@ -10,14 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
           rel="stylesheet">
 
-    <link rel="stylesheet" href="css//style_main.css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="swiper/swiper-bundle.css">
     <script src="swiper/swiper-bundle.js"></script>
+    <script src="js/jquery.barrating.js"></script>
     <script src="fancybox/fancybox.umd.js"></script>
     <link rel="stylesheet" href="fancybox/fancybox.css"/>
+
+    <link rel="stylesheet" href="css//style_main.css">
    
     
     <title>Каталог</title>
@@ -298,6 +299,11 @@
                     <div class="head_h1">
                         <h1 class="h1">iPhone X</h1>
                     </div>
+                    <a class="review-total js-scroll-to-block" href="#review-card">
+                        <img class="review-total__img" src="icons/star-review-active.svg" alt="star">
+                        <div class="review-total__grade h6_semi">5.0</div>
+                        <div class="review-total__quantity h6">5 отзывов</div>
+                    </a>
                     <div class="card_price card-price-main">
                         <div class="select_with_resty card-price-select-with-resty">
                             <div class="card_price__top">
@@ -881,6 +887,293 @@
                 <div class="btn">
                     <a href="#" class="white_btn modal_button" data-id="popup_ask">Узнать стоимость прямо сейчас</a>
                 </div>
+            </div>
+        </div>
+
+        <div id="review-card" class="reviews_inline">
+            <div class="head">
+                <h2>Отзывы</h2>
+                <div class="reviews_inline_arrows">
+                    <span class="swiper_arrow_left"></span>
+                    <span class="swiper_arrow_right"></span>
+                </div>
+            </div>
+            <div class="body">
+                <div class="reviews_inline_swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide review_item">
+                            <div class="reviewer_info">
+                                <div class="reviewer_name">
+                                    <p class="h4">Анастасия Иванова</p>
+                                </div>
+                                <div class="reviewer_rate">
+                                    <img src="icons/star_color.svg" alt="">
+                                    <img src="icons/star_color.svg" alt="">
+                                    <img src="icons/star_color.svg" alt="">
+                                    <img src="icons/star_color.svg" alt="">
+                                    <img src="icons/star_gray.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="reviewed_device">
+                                <p class="h6">iPhone 13 Pro 256 GB</p>
+                            </div>
+                            <div class="review_text">
+                                <p>Девочки, я в восторге!!! Дмитрий из</p>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide review_item">
+                            <div class="reviewer_info">
+                                <div class="reviewer_name">
+                                    <p class="h4">Анастасия Иванова</p>
+                                </div>
+                                <div class="reviewer_rate">
+                                    <img src="icons/star_color.svg" alt="">
+                                    <img src="icons/star_color.svg" alt="">
+                                    <img src="icons/star_color.svg" alt="">
+                                    <img src="icons/star_color.svg" alt="">
+                                    <img src="icons/star_gray.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="reviewed_device">
+                                <p class="h6">iPhone 13 Pro 256 GB</p>
+                            </div>
+                            <div class="review_text">
+                                <p>Девочки, я в восторге!!! Дмитрий из Resty просто секси, а телефончик — супер! Обслуживание на высоте,
+                                    всё объяснил, показал, теперь летаю с новым гаджетом и не нарадуюсь!</p>
+                                <p>😍 Рекомендую всем, девчонки, бегите туда!</p>
+                            </div>
+                            <div class="preview_reviewed_device_photo">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide review_item">
+                            <div class="reviewer_info">
+                                <div class="reviewer_name">
+                                    <p class="h4">Анастасия Иванова</p>
+                                </div>
+                                <div class="reviewer_rate">
+                                    <img src="icons/star_color.svg" alt="">
+                                    <img src="icons/star_color.svg" alt="">
+                                    <img src="icons/star_color.svg" alt="">
+                                    <img src="icons/star_color.svg" alt="">
+                                    <img src="icons/star_gray.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="reviewed_device">
+                                <p class="h6">iPhone 13 Pro 256 GB</p>
+                            </div>
+                            <div class="review_text">
+                                <p>Девочки, я в восторге!!! Дмитрий из Resty просто секси, а телефончик — супер! Обслуживание на высоте,
+                                    всё объяснил, показал, теперь летаю с новым гаджетом и не нарадуюсь!</p>
+                                <p>😍 Рекомендую всем, девчонки, бегите туда!</p>
+                            </div>
+                            <div class="preview_reviewed_device_photo">
+                                <div class="img_container">
+                                    <a href="images/product_main_phone.png" data-fancybox="gallery3">
+                                        <img src="images/product_other_phone.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="img_container">
+                                    <a href="images/product_main_phone.png" data-fancybox="gallery3">
+                                        <img src="images/product_other_phone.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="img_container">
+                                    <a href="images/product_main_phone.png" data-fancybox="gallery3">
+                                        <img src="images/product_other_phone.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide review_item">
+                            <div class="reviewer_info">
+                                <div class="reviewer_name">
+                                    <p class="h4">Анастасия Иванова</p>
+                                </div>
+                                <div class="reviewer_rate">
+                                    <img src="icons/star_color.svg" alt="">
+                                    <img src="icons/star_color.svg" alt="">
+                                    <img src="icons/star_color.svg" alt="">
+                                    <img src="icons/star_color.svg" alt="">
+                                    <img src="icons/star_gray.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="reviewed_device">
+                                <p class="h6">iPhone 13 Pro 256 GB</p>
+                            </div>
+                            <div class="review_text">
+                                <p>Девочки, я в восторге!!! Дмитрий из Resty просто секси, а телефончик — супер! Обслуживание на высоте,
+                                    всё объяснил, показал, теперь летаю с новым гаджетом и не нарадуюсь!</p>
+                                <p>😍 Рекомендую всем, девчонки, бегите туда!</p>
+                            </div>
+                            <div class="preview_reviewed_device_photo">
+                                <div class="img_container">
+                                    <a href="images/product_main_phone.png" data-fancybox="gallery4">
+                                        <img src="images/product_other_phone.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="img_container">
+                                    <a href="images/product_main_phone.png" data-fancybox="gallery4">
+                                        <img src="images/product_other_phone.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="img_container">
+                                    <a href="images/product_main_phone.png" data-fancybox="gallery4">
+                                        <img src="images/product_other_phone.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="add-review-wrapper">
+                    <!--<a href="#add-review" class="color_btn h5 add-review-btn js-modal-lnk">Оставить отзыв</a>-->
+                    <span class="color_btn modal_button add-review-btn" data-id="popup_add_review">Оставить отзыв</span>
+                </div>
+
+                <div id="popup_add_review" class="modal modal_form">
+                    <div class="modal_content">
+
+                        <div class="modal_form_content_window">
+                            <div class="form_head h5">Оставить отзыв</div>
+                            <div class="form_body">
+                                <form method="post" enctype="multipart/form-data">
+                                    <div class="item">
+                                        <label for="first_name" class="h6">Имя</label>
+                                        <input type="text" name="first_name" id="first_name">
+                                    </div>
+                                    <div class="item">
+                                        <label for="review_capt" class="h6">Заголовок отзыва</label>
+                                        <input type="text" name="review_capt" id="review_capt">
+                                    </div>
+                                    <div class="item">
+                                        <label for="review_text" class="h6">Текст отзыва</label>
+                                        <textarea type="text" name="review_text" id="review_text"></textarea>
+                                    </div>
+                                    <div class="item">
+                                        <p class="h6">Оценка</p>
+                                        <div class="rating-area">
+                                            <input type="radio" id="star-5" name="rating" value="5">
+                                            <label for="star-5" title="Оценка «5»"></label>
+                                            <input type="radio" id="star-4" name="rating" value="4">
+                                            <label for="star-4" title="Оценка «4»"></label>
+                                            <input type="radio" id="star-3" name="rating" value="3">
+                                            <label for="star-3" title="Оценка «3»"></label>
+                                            <input type="radio" id="star-2" name="rating" value="2">
+                                            <label for="star-2" title="Оценка «2»"></label>
+                                            <input type="radio" id="star-1" name="rating" value="1">
+                                            <label for="star-1" title="Оценка «1»"></label>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="input-file-row">
+                                            <label class="input-file">
+                                                <input type="file" name="file[]" multiple>
+                                                <span>
+                                        <img src="icons/camera.svg" alt="">
+                                        <p class="capt">Добавить фотографии</p>
+                                        <p class="desc">Форматы JPG, PNG до 20 мегабайт каждый</p>
+                                    </span>
+                                            </label>
+                                            <div class="input-file-list"></div>
+                                        </div>
+                                    </div>
+                                    <div class="btn">
+                                        <button type="submit">Отправить</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                        <div class="modal_form_finish_window">
+                            <div class="in">
+                                <img src="icons/button_ok_brand.svg" alt="">
+                                <p class="capt h1">Ваш отзыв принят</p>
+                                <p class="msg">Администратор опубликует ваш отзыв в ближайшее время</p>
+                            </div>
+                        </div>
+
+                        <span class="form_close modal_close"></span>
+                    </div>
+                </div>
+
+
+                <!--<div class="add-review-wrapper">
+                    <a href="#add-review" class="color_btn h5 add-review-btn js-modal-lnk">Оставить отзыв</a>
+                </div>
+
+                <div id="add-review" class="modal-fancy modal-fancy&#45;&#45;hide">
+                    <div class="modal-fancy__content">
+                        <button class="modal-fancy__close" data-fancybox-close type="button">
+                            <svg class="icon icon&#45;&#45;size-xl">
+                                <use href="icons/sprite.svg#cross"/>
+                            </svg>
+                        </button>
+                        <p class="h5">Оставить отзыв</p>
+                        <form class="form-style">
+                            <div class="form-style__item">
+                                <label for="review_name" class="h6">Имя</label>
+                                <input class="form-style__field" type="text" name="review_name" id="review_name">
+                            </div>
+                            <div class="form-style__item">
+                                <label for="review_title" class="h6">Заголовок отзыва</label>
+                                <input class="form-style__field" type="text" name="review_title" id="review_title">
+                            </div>
+                            <div class="form-style__item">
+                                <label for="review_text" class="h6">Текст отзыва *</label>
+                                <textarea class="form-style__textarea" name="review_text" id="review_text" required></textarea>
+                            </div>
+                            <div class="form-style__item">
+                                <label class="h6">Оценка *</label>
+                                <select class="barrating" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+
+                            <div class="upload-wrapper">
+                                <div class="upload-container">
+                                    <input type="file" name="photos[]" id="file-input" class="file-input" multiple accept="image/jpeg, image/png" style="display:none;">
+
+                                    <label for="file-input" class="upload-label">
+                                        <svg class="icon icon&#45;&#45;size-xl">
+                                            <use href="icons/sprite.svg#camera"/>
+                                        </svg>
+                                        <span class="h6_medium">Добавить фотографии</span>
+                                        <span class="upload-hint text_s">Форматы JPG, PNG до 20 мегабайт каждый</span>
+                                    </label>
+                                </div>
+                                <div class="preview-list preview-list&#45;&#45;hidden"></div>
+                            </div>
+
+                            <p class="text_s">* Обязательные поля для заполнения</p>
+                            <button type="button" class="color_btn js-review">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="success-modal" class="modal-fancy modal-fancy&#45;&#45;hide success-modal">
+                    <div class="success-modal__content modal-fancy__content">
+                        <button class="modal-fancy__close" data-fancybox-close type="button">
+                            <svg class="icon icon&#45;&#45;size-xl">
+                                <use href="icons/sprite.svg#cross"/>
+                            </svg>
+                        </button>
+                        <img src="icons/button_ok.svg" alt="">
+                        <p class="h1">Ваш отзыв принят</p>
+                        <p class="text_m">Администратор опубликует ваш отзыв в ближайшее время</p>
+                    </div>
+                </div>-->
             </div>
         </div>
 

@@ -594,9 +594,27 @@ jQuery(document).ready(function ($) {
 //---swiper--------------------------------------------------------------------------------
 jQuery(document).ready(function ($) {
 
-    if(typeof $.fancybox == 'function') {
+    /*if(typeof $.fancybox == 'function') {
         Fancybox.bind("[data-fancybox]");
-    };
+    };*/
+    $('[data-fancybox]').fancybox({
+        // other options
+        buttons: [
+            "zoom",
+            "slideShow",
+            "fullScreen",
+            "thumbs", // Make sure 'thumbs' is in the buttons array
+            "close"
+        ],
+        thumbs: {
+            autoStart: true, // This will show the thumbnails automatically on open
+            hideOnClose: true,
+        }
+    });
+
+    //Звёзда для отзыва
+    $('.barrating').barrating();
+
 
     //Работа inline отзывов
     if( $(".reviews_inline_swiper").length ) {
@@ -664,12 +682,9 @@ jQuery(document).ready(function ($) {
             },
         });
     };
-    if($("[data-fancybox]").length) {
-        Fancybox.bind("[data-fancybox]");
-    };
 
     
-    //Работа галереи slider & fancybox
+    //Работа галереи slider
     if($(".swiper_card").length) {
         const swiper_card = new Swiper('.swiper_card', {
             pagination: {
@@ -1500,6 +1515,20 @@ jQuery(document).ready(function ($)
     type_list_open();
 });
 
+function successModal() {
+    $.fancybox.close(); // Закрыть текущее
+    // Открыть новое (например, inline-контент)
+    $.fancybox.open({
+        src: '#success-modal',
+        clickOutside: true,
+        opts: {
+            buttons: false,
+            smallBtn: false,
+            touch: false,
+            animationEffect: "fade",
+        }
+    });
+}
 
 
 jQuery(document).ready(function ($) {
@@ -1629,6 +1658,22 @@ jQuery(document).ready(function ($)
             }
         });
     });
+
+    body.on('click', '.js-modal-lnk', function (e) {
+        e.preventDefault();
+        let that =  $(this);
+
+        $.fancybox.open({
+            src: that.attr('href'),
+            clickOutside: true,
+            opts: {
+                buttons: false,
+                smallBtn: false,
+                touch: false,
+                animationEffect: "fade",
+            }
+        });
+    });
 });
 
 document.addEventListener('click', function (event) {
@@ -1643,3 +1688,94 @@ document.addEventListener('click', function (event) {
         }
     }
 });
+
+/*Аккордион*/
+$('.accordion').on('click', '.js-accordion__title', function (e) {
+    e.preventDefault();
+    let $that = $(this),
+        $activeClass='js-accordion__title--active',
+        $parent	= $that.closest('.js-accordion');
+
+    if ($that.hasClass($activeClass)){
+        $that.next('.js-accordion__info').stop(true).slideUp(400, function() {
+            $that.removeClass($activeClass)
+        });
+    }
+    else {
+        $that.addClass($activeClass);
+        $that.next('.js-accordion__info').stop(true).slideDown();
+    }
+});
+/***************************************************/
+
+/******************Добавление фото********************/
+$(document).ready(function() {
+    const maxFileSize = 20 * 1024 * 1024;
+    const $fileInput = $('.file-input');
+    const $previewList = $('.preview-list');
+
+    // Функция для проверки пустоты списка
+    function checkEmpty() {
+        if ($previewList.children().length === 0) {
+            $previewList.addClass('preview-list--hidden');
+        } else {
+            $previewList.removeClass('preview-list--hidden');
+        }
+    }
+
+    // Проверяем состояние при загрузке страницы
+    checkEmpty();
+
+    $fileInput.on('change', function() {
+        $previewList.empty();
+        checkEmpty(); // Сразу скрываем, так как список пуст
+
+        const files = Array.from(this.files);
+        if (files.length === 0) return;
+
+        let processedCount = 0;
+
+        files.forEach((file) => {
+            if (!['image/jpeg', 'image/png'].includes(file.type) || file.size > maxFileSize) {
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const previewHtml = `
+                    <div class="preview-item">
+                        <img src="${e.target.result}"/>
+                        <div class="remove-btn">
+                            <svg class="icon icon--size-l">
+                                <use href="icons/sprite.svg#cross"/>
+                            </svg>
+                         </div>
+                    </div>
+                `;
+                $previewList.append(previewHtml);
+
+                // Проверяем видимость после добавления элемента
+                checkEmpty();
+            };
+            reader.readAsDataURL(file);
+        });
+    });
+
+    // Удаление отдельного фото
+    $(document).on('click', '.remove-btn', function() {
+        const $item = $(this).closest('.preview-item');
+
+        $item.fadeOut(300, function() {
+            $(this).remove();
+            // Проверяем видимость ПОСЛЕ удаления из DOM
+            checkEmpty();
+
+            // Если удалили всё, очищаем инпут, чтобы можно было выбрать те же файлы снова
+            if ($previewList.children().length === 0) {
+                $fileInput.val('');
+            }
+        });
+    });
+});
+
+/******************Добавление фото end********************/
