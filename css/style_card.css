@@ -856,7 +856,26 @@
     display: grid;
     gap: 24px;
 }
+.advantage {
+    display: grid;
+    grid-row-gap: 16px;
+}
+.advantage-list {
+    display: grid;
+    grid-gap: 16px;
+}
+.advantage-list__item {
+    display: grid;
+    grid-row-gap: 16px;
+    align-content: start;
+    padding: 24px;
+    border-radius: 24px;
+    background-color: var(--main-color-Grey1);
+}
 @media (min-width: 640px) {
+    .advantage-list {
+        grid-template-columns: 1fr 1fr;
+    }
     .popup_about_resty__price {
         display: flex;
         align-items: center;
@@ -881,6 +900,9 @@
 }
 
 @media only screen and (min-width:768px) {
+    .advantage-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
     .swiper_card_img {
         display: grid;
         grid-row-gap: 16px;
